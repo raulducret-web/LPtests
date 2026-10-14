@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mood · The buzz you've been looking for</title>
+<meta name="description" content="Hemp-derived THC gummies, shipped to your door with a 100-day guarantee. 21+ only.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#163317">
+<meta property="og:title" content="Mood · The buzz you've been looking for">
+<meta property="og:description" content="Hemp-derived THC gummies, shipped to your door with a 100-day guarantee. 21+ only.">
+<script>try{if(localStorage.getItem("mood_age_ok")==="1")document.documentElement.classList.add("age-ok")}catch(e){}</script>
+<link rel="preload" href="assets/centra-no2-bold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/centra-no2-medium.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&display=swap" rel="stylesheet">
+<style>
+@font-face{font-family:"Centra No2";src:url(assets/centra-no2-bold.woff2) format("woff2");font-weight:700;font-display:swap;ascent-override:95%;descent-override:25%;line-gap-override:0%}
+@font-face{font-family:"Centra No2";src:url(assets/centra-no2-medium.woff2) format("woff2");font-weight:400 600;font-display:swap;ascent-override:95%;descent-override:25%;line-gap-override:0%}
+:root{
+  color-scheme:light;
+  --green:#163317;--green2:#006b41;--cta1:#28a325;--cta2:#006b41;
+  --paper:#fffcf8;--cream:#fef7ee;--sand:#fbf3e9;--line:#ece4d8;--tan:#f3e2c9;
+  --yellow:#ffc657;--star:#ffa800;--mint:#e8f3ea;
+  --body:#3d4b3d;--muted:#66736a;--grey:#545454;
+  --display:"Centra No2",Inter,system-ui,-apple-system,sans-serif;
+  --text:Inter,system-ui,-apple-system,sans-serif;
+  --ease:cubic-bezier(.16,1,.3,1);
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px);-webkit-text-size-adjust:100%}
+*,*::before,*::after{box-sizing:inherit}
+html,body{overflow-x:hidden}
+@supports (overflow:clip){html,body{overflow-x:clip}}
+body{margin:0;background:var(--cream);color:var(--green);font-family:var(--text);font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;padding:0}
+h1,h2,h3,p{margin:0}
+.d{font-family:var(--display)}
+.wrap{width:100%;max-width:1200px;margin:0 auto}
+:focus-visible{outline:3px solid var(--green2);outline-offset:3px;border-radius:8px}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:999px;font-family:var(--display);font-weight:700;white-space:nowrap;transition:transform .35s var(--ease),box-shadow .35s var(--ease),background-color .25s}
+.btn-g{background:linear-gradient(180deg,var(--cta1),var(--cta2));color:#fff;box-shadow:0 6px 8px rgba(0,77,38,.25)}
+.btn-g:hover{transform:translateY(-2px);box-shadow:0 10px 18px rgba(0,77,38,.3)}
+.btn-o{border:1.5px solid var(--green);color:var(--green)}
+.btn .arr{display:block;flex:none;width:1.05em;height:1.05em;transition:transform .35s var(--ease)}
+.btn:hover .arr{transform:translateX(4px)}
+.chip{display:inline-flex;align-items:center;border-radius:999px;padding:6px 12px;font:500 12.5px/16px var(--text);letter-spacing:.25px;white-space:nowrap}
+.chip-dark{background:var(--green);color:#fff}
+.chip-mint{background:var(--mint);color:var(--green2)}
+.chip-y{background:var(--yellow);color:var(--green);font-size:12px;letter-spacing:.72px;text-transform:uppercase}
+
+/* announcement + nav */
+.announce{background:var(--green);color:var(--yellow);text-align:center;padding:10px 16px;font:500 12px/16px var(--text);letter-spacing:.6px;text-transform:uppercase}
+.nav{background:var(--cream);padding:20px}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between}
+.logo img{width:112px;height:auto}
+.nav .btn{padding:13px 26px;font-size:16px}
+
+/* hero */
+.hero{position:relative;overflow:hidden;background:radial-gradient(120% 90% at 50% 0%,#fffdf9 0%,var(--sand) 70%);padding:64px 16px 84px;isolation:isolate}
+.hero-in{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;gap:24px;text-align:center}
+.pill{background:var(--green);color:var(--paper);border-radius:999px;padding:9px 16px;font:700 12.5px/1 var(--display);letter-spacing:.75px;text-transform:uppercase}
+.h1{font:700 64px/.98 var(--display);letter-spacing:-1.92px;max-width:620px;margin-top:14px}
+.h1 .buzz{color:var(--green2)}
+.w{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.1em;margin-bottom:-.1em}
+.w>span{display:inline-block}
+.js .w>span{transform:translateY(108%)}
+.js .ready .w>span{transform:none;transition:transform 1s var(--ease);transition-delay:calc(var(--i)*60ms)}
+.sub{font:500 20px/1.45 var(--display);max-width:440px;margin-top:8px}
+.offer{display:inline-flex;align-items:center;gap:8px;background:var(--yellow);border-radius:100px;padding:8px 14px;font:700 14px/1 var(--display)}
+.offer b{background:var(--green);color:var(--yellow);border-radius:100px;padding:3px 8px;font-size:12px;letter-spacing:.48px}
+.hero .btn-g{padding:18px 30px;font-size:17px;background:linear-gradient(90deg,var(--cta1),var(--cta2));color:var(--paper)}
+.fine{font:400 12px/1.4 var(--display);color:var(--grey)}
+
+/* gummy fields */
+.gfield{position:absolute;inset:0;pointer-events:none;z-index:1}
+.gum{position:absolute;image-rendering:auto;left:0;top:0;opacity:0;will-change:transform;user-select:none;-webkit-user-drag:none;filter:drop-shadow(0 12px 14px rgba(22,51,23,.18))}
+.gum.on{opacity:1}
+.gum.front{z-index:3;filter:drop-shadow(0 18px 20px rgba(22,51,23,.2))}
+.gum.back{filter:drop-shadow(0 8px 10px rgba(22,51,23,.12))}
+
+/* trust */
+.trust{background:var(--paper);padding:24px 72px}
+.trust-in{display:flex;gap:24px;justify-content:space-between}
+.tb{flex:1;display:flex;gap:12px;align-items:center;min-width:0}
+.tb .ic{width:42px;height:42px;flex:none;display:grid;place-items:center;color:var(--green)}
+.tb .ic svg{display:block}
+.tb strong{display:block;font:700 16px/1.25 var(--display)}
+.tb span{display:block;font:400 14px/1.35 var(--display);color:var(--grey)}
+
+/* shop */
+.shop{background:var(--sand);padding:60px 40px}
+.shop .wrap{display:flex;flex-direction:column;gap:20px}
+.h2{font:700 54px/1.04 var(--display);letter-spacing:-1.62px}
+.lede{font:500 19px/1.5 var(--display);color:rgba(22,51,23,.85);max-width:620px}
+.quiz{font:700 15px/1.3 var(--display);color:var(--green2);text-decoration:underline;text-underline-offset:3px;width:max-content}
+.feel{display:flex;gap:12px;flex-wrap:wrap}
+.feel button{background:#fff;border:1.5px solid rgba(22,51,23,.2);border-radius:999px;padding:13px 18px;font:700 15px/1 var(--display);transition:background-color .25s,color .25s,border-color .25s,transform .3s var(--ease)}
+.feel button:hover{border-color:var(--green);transform:translateY(-1px)}
+.feel button[aria-pressed=true]{background:var(--green);border-color:var(--green);color:var(--paper)}
+.feeling{background:var(--tan);border-radius:12px;padding:14px 16px;font:500 15px/1.4 var(--display)}
+.feeling b{font-weight:700}
+.feeling a{color:var(--green2);font-weight:700;white-space:nowrap;margin-left:4px}
+.feeling a:hover{text-decoration:underline}
+.feeling span{display:inline-block;transition:opacity .25s,transform .35s var(--ease)}
+.feeling span.swap{opacity:0;transform:translateY(6px)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;perspective:1000px}
+.pcard{--bc:var(--line);background:var(--cream);border:1px solid var(--bc);border-radius:28px;padding:14px 24px 24px;display:flex;flex-direction:column;gap:12px;transition:transform .5s var(--ease),box-shadow .45s var(--ease),border-color .3s;transform-style:preserve-3d}
+@supports (grid-template-rows:subgrid){.pcard{display:grid;grid-row:span 7;grid-template-rows:subgrid;row-gap:12px}}
+.pcard .ph{margin:0 -10px 4px}
+.pcard.tilt{transition:transform .12s linear,box-shadow .45s var(--ease),border-color .3s}
+.pcard:hover,.pcard.on,.cards:not(:hover) .pcard.def{border-color:var(--green);box-shadow:0 0 0 1.5px var(--green),0 22px 40px -18px rgba(22,51,23,.35)}
+.pcard .chips{display:flex;gap:8px;flex-wrap:wrap;align-content:flex-start}
+.pcard .meta{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.pcard .meta .chip-dark{font:700 11px/16px var(--display);letter-spacing:.6px;text-transform:uppercase}
+.rating{font:500 13px/1 var(--text);color:var(--muted);white-space:nowrap}
+.rating i{font-style:normal;color:var(--star);margin-right:3px}
+.pcard .chips .chip{background:var(--sand);color:var(--green);border:1px solid var(--line);white-space:normal;line-height:16px}
+.pcard .ph{display:block}
+.pcard .ph .lone{transition:transform .6s var(--ease)}
+.pcard:hover .ph .lone{transform:translateY(-54%) rotate(-4deg) scale(1.06)}
+.cards.swap .pcard{opacity:0;transform:translateY(14px)}
+.cards .pcard{transition:opacity .35s var(--ease),transform .5s var(--ease),box-shadow .45s var(--ease),border-color .3s}
+.pcard h3{font:700 24px/28px var(--display);letter-spacing:-.12px}
+.pcard p{font:400 15px/22px var(--text);color:var(--body)}
+.price{display:flex;gap:8px;align-items:center;justify-content:space-between;flex-wrap:wrap;font:400 14px/20px var(--text);color:var(--muted)}
+.price .q{white-space:nowrap}
+.price b{font:700 18px/24px var(--display);color:var(--green);white-space:nowrap}
+.pcard .btn{width:100%;padding:15px 24px;font-size:16px;align-self:end}
+.btn-o{position:relative;isolation:isolate;overflow:hidden;transition:color .3s,border-color .3s,box-shadow .35s var(--ease),transform .35s var(--ease)}
+.btn-o::before{content:"";position:absolute;inset:-2px;z-index:-1;background:linear-gradient(180deg,var(--cta1),var(--cta2));opacity:0;transition:opacity .3s}
+.pcard:hover .btn-o,.pcard.on .btn-o,.cards:not(:hover) .pcard.def .btn-o{color:#fff;border-color:transparent;box-shadow:0 6px 8px rgba(0,77,38,.25)}
+.pcard:hover .btn-o::before,.pcard.on .btn-o::before,.cards:not(:hover) .pcard.def .btn-o::before{opacity:1}
+
+/* image placeholders */
+.ph{position:relative;border-radius:20px;background:linear-gradient(140deg,#dfe7d6 0%,#efe4d2 55%,#e9d6bd 100%);overflow:hidden}
+.ph[data-label]::after{content:attr(data-label);position:absolute;right:12px;top:12px;font:500 11px/1 var(--text);letter-spacing:.3px;color:rgba(22,51,23,.55);background:rgba(255,252,248,.7);padding:6px 9px;border-radius:999px}
+.ph.dark{background:linear-gradient(140deg,#2c4f2d 0%,#3d5b38 50%,#5b6b44 100%)}
+.ph.dark::after{color:rgba(254,247,238,.75);background:rgba(22,51,23,.5)}
+.ph .lone{position:absolute;width:38%;left:31%;top:50%;transform:translateY(-50%) rotate(-12deg);filter:drop-shadow(0 14px 16px rgba(22,51,23,.25))}
+.pcard .ph{height:250px}
+
+/* dose */
+.dose{position:relative;padding:0 40px 56px}
+.panel{background:var(--green);border-radius:44px;padding:64px;display:flex;gap:64px;align-items:center;max-width:1360px;margin:0 auto;position:relative}
+.dimg{width:480px;height:640px;flex:none;border-radius:30px}
+.photo{object-fit:cover;display:block}
+.rimg{width:100%;height:320px;border-radius:28px}
+.cap{background:#fff;border-radius:999px;padding:9px 16px;font:700 15px/20px var(--display);position:relative;z-index:1}
+.dcopy{flex:1;display:flex;flex-direction:column;gap:20px;align-items:flex-start;min-width:0}
+.h2l{font:700 52px/56px var(--display);letter-spacing:-.78px;color:var(--cream)}
+.dcopy>p{font:400 18px/28px var(--text);color:#d3dfd0}
+.steps{position:relative;display:flex;flex-direction:column;gap:12px;width:100%}
+.rail{position:absolute;left:44px;width:4px;border-radius:4px;background:rgba(255,198,87,.18);overflow:hidden}
+.rail i{position:absolute;inset:0;background:var(--yellow);transform-origin:top;transform:scaleY(1)}
+.step{position:relative;background:rgba(255,255,255,.08);border-radius:22px;padding:22px;display:flex;gap:18px;align-items:flex-start;transition:opacity .5s var(--ease),background-color .5s,transform .5s var(--ease)}
+.num{position:relative;z-index:1;width:48px;height:48px;flex:none;border-radius:999px;background:var(--yellow);color:var(--green);display:grid;place-items:center;font:700 18px/1 var(--display);box-shadow:0 0 0 2px var(--yellow) inset;transition:background-color .45s,color .45s}
+.js .step:not(.act){opacity:.5}
+.js .step:not(.act) .num{background:var(--green);color:var(--yellow)}
+.js .step.act{background:rgba(255,255,255,.11)}
+.step .tt{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:8px}
+.step h3{font:700 21px/26px var(--display);color:var(--cream)}
+.step .chip{background:#2c4f2d;color:var(--yellow)}
+.step p{font:400 15px/22px var(--text);color:#cfdccc}
+.disc{max-width:1200px;margin:0 auto;padding-top:28px;text-align:center;font:400 12px/17px var(--text);color:var(--muted)}
+
+/* marquee (new block) */
+.mq{background:var(--cream);padding:16px 0 72px;overflow:hidden}
+.mrow{white-space:nowrap;overflow:hidden}
+.mtrack{display:inline-flex;width:max-content;align-items:center;will-change:transform}
+.mseq{flex:none;display:inline-flex;align-items:center;gap:36px;padding-right:36px}
+.mseq span{font:700 96px/1.05 var(--display);letter-spacing:-2px}
+.mrow.r2 .mseq span{color:transparent;-webkit-text-stroke:2px var(--green)}
+.mseq img{flex:none;width:84px;height:auto;transform:rotate(calc(var(--rot,0deg) + var(--k)*60deg));filter:drop-shadow(0 8px 10px rgba(22,51,23,.18))}
+
+/* why */
+.why{background:var(--paper);padding:60px 40px;position:relative}
+.why .wrap{display:flex;flex-direction:column;gap:20px}
+.eyebrow{font:700 19px/1.5 var(--display);color:rgba(22,51,23,.8)}
+.why .lede{font-weight:700;color:var(--green);max-width:none}
+.tiles{display:flex;gap:18px;flex-wrap:wrap}
+.tile{flex:1;min-width:280px;min-height:180px;background:#fff;border-radius:18px;padding:24px;display:flex;flex-direction:column;gap:8px}
+.tile h3{font:700 20px/1.5 var(--display)}
+.tile p{font:500 15px/1.5 var(--display);color:rgba(22,51,23,.8)}
+.tile small{font:700 13px/1.3 var(--display)}
+.tile small a{text-decoration:underline;text-decoration-color:transparent;text-underline-offset:3px;transition:text-decoration-color .2s}
+.tile small a:hover,.tile small a:focus-visible{text-decoration-color:currentColor}
+
+/* reviews */
+.rev{background:var(--cream);padding:104px 40px;position:relative}
+.rev .wrap{display:flex;gap:64px;align-items:flex-start}
+.rleft{width:544px;flex:none;display:flex;flex-direction:column;gap:18px;align-items:flex-start}
+.rleft .chip-y{font:800 12px/16px var(--text);letter-spacing:.6px}
+.h2r{font:700 56px/60px var(--display);letter-spacing:-.84px}
+.count{font-variant-numeric:tabular-nums}
+.rlist{flex:1;display:flex;flex-direction:column;gap:16px;min-width:0}
+.rcard{background:#fff;border:1px solid var(--line);border-radius:26px;padding:30px;display:flex;flex-direction:column;gap:14px}
+.rtop{display:flex;gap:12px;align-items:center}
+.stars{color:var(--star);font:500 15px/20px var(--text);letter-spacing:.3px}
+.rcard q{quotes:none;font:500 19px/28px var(--display)}
+.rcard small{font:400 13px/18px var(--text);color:var(--muted)}
+
+/* faq */
+.faq{background:#fff;padding:104px 40px}
+.faq .wrap{display:flex;gap:72px;align-items:flex-start}
+.fleft{width:380px;flex:none;display:flex;flex-direction:column;gap:20px;align-items:flex-start;position:sticky;top:32px}
+.fleft .btn{background:var(--green);color:#fff;padding:14px 22px;font-size:15px;text-transform:uppercase;white-space:normal;text-align:left}
+.flist{flex:1;display:flex;flex-direction:column;gap:12px;min-width:0}
+.fi{background:var(--cream);border-radius:24px}
+.fq{width:100%;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:26px;text-align:left;font:700 21px/28px var(--display)}
+.tg{width:32px;height:32px;flex:none;border-radius:999px;background:#fff;border:1px solid var(--line);position:relative;transition:transform .45s var(--ease)}
+.tg::before,.tg::after{content:"";position:absolute;left:50%;top:50%;width:12px;height:2px;margin:-1px 0 0 -6px;background:var(--green);border-radius:2px;transition:transform .45s var(--ease)}
+.tg::after{transform:rotate(90deg)}
+.fi.open .tg::after{transform:rotate(0)}
+.fa{display:grid;grid-template-rows:0fr;transition:grid-template-rows .5s var(--ease)}
+.fi.open .fa{grid-template-rows:1fr}
+.fa>div{overflow:hidden}
+.fa p{padding:0 26px 26px;font:400 16px/25px var(--text);color:var(--body)}
+
+/* guarantee */
+.gtee{padding:88px 40px 56px}
+.ypanel{background:var(--yellow);border-radius:44px;padding:64px;display:flex;gap:56px;align-items:center;max-width:1360px;margin:0 auto}
+.seal{width:200px;height:200px;flex:none}
+.sealStar,.sealRing{transform-box:view-box;transform-origin:100px 100px}
+.js .seal:not(.spun) .sealStar{transform:rotate(-45deg)}
+.seal .sealStar{transition:transform 1.4s var(--ease)}
+.gcopy{flex:1;display:flex;flex-direction:column;gap:18px;align-items:flex-start}
+.gcopy .chip{background:var(--green);color:var(--cream);font-size:12px;letter-spacing:.72px;text-transform:uppercase}
+.gcopy p{font:400 18px/27px var(--text);color:#3a3319}
+.gcopy .btn{padding:18px 30px;font-size:18px}
+
+/* final */
+.final{padding:0 40px 56px}
+.fwrap{position:relative;max-width:1360px;margin:0 auto}
+.fpanel{background:var(--green);border-radius:44px;padding:64px;display:flex;gap:64px;align-items:center;will-change:clip-path}
+.fcopy{flex:1;display:flex;flex-direction:column;gap:22px;align-items:flex-start;min-width:0;position:relative;z-index:2}
+.fcopy .chip-y{font-size:13px;letter-spacing:.39px;text-transform:none}
+.h2x{font:700 72px/74px var(--display);letter-spacing:-1.44px;color:var(--cream)}
+.fcopy>p{font:400 19px/29px var(--text);color:#d3dfd0}
+.fcopy .btn{background:var(--yellow);color:var(--green);padding:20px 36px;font-size:19px;box-shadow:0 6px 8px rgba(0,77,38,.25)}
+.fcopy .btn:hover{transform:translateY(-2px)}
+.fcopy small{font:400 13px/18px var(--text);color:#a9bba7}
+.fimg{width:520px;height:440px;flex:none;border-radius:30px}
+.fwrap .gfield{z-index:3}
+.final{overflow-x:clip}
+
+/* contact + footer */
+.contact{background:var(--paper);padding:64px 40px}
+.contact .wrap{display:flex;flex-direction:column;gap:20px}
+.contact h2{font:700 40px/1.05 var(--display);letter-spacing:-1.2px;max-width:914px}
+.citems{display:flex;gap:12px;flex-wrap:wrap}
+.citem{flex:1;min-width:240px;background:#fff;border-radius:14px;padding:20px;display:flex;flex-direction:column;gap:6px}
+.citem span{font:500 13px/1.2 var(--display);color:rgba(22,51,23,.7)}
+.citem b{font:700 17px/1.2 var(--display)}
+footer{background:var(--green);padding:64px 24px 48px;color:#a9bba7;text-align:center}
+footer .wrap{display:flex;flex-direction:column;gap:24px;align-items:center}
+footer .flogo{width:112px;height:auto}
+.links{display:flex;gap:12px 32px;flex-wrap:wrap;justify-content:center;font:500 14px/20px var(--text);color:var(--cream)}
+footer hr{width:100%;border:0;height:1px;background:rgba(255,255,255,.14);margin:0}
+footer p{font:400 12px/18px var(--text);max-width:880px}
+
+/* journey companions */
+.comp{position:absolute;width:var(--s,90px);pointer-events:none;z-index:0;will-change:transform;filter:drop-shadow(0 12px 14px rgba(22,51,23,.16));display:none}
+@media (min-width:1320px){.comp{display:block}}
+
+/* sticky mobile cta */
+.sticky{position:fixed;left:0;right:0;bottom:0;width:100%;max-width:100vw;z-index:20;background:var(--paper);border-top:1px solid #ede8e1;padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));display:none;flex-direction:column;gap:6px;align-items:stretch;transform:translateY(110%);transition:transform .45s var(--ease)}
+.sticky.show{transform:none}
+.sticky .btn{padding:15px;font-size:16px}
+.sticky small{text-align:center;font:500 11px/1.2 var(--display);color:var(--grey)}
+
+/* skip link */
+.skip{position:absolute;left:12px;top:-60px;z-index:200;background:var(--green);color:var(--paper);padding:12px 16px;border-radius:10px;font:700 14px/1 var(--display);transition:top .2s}
+.skip:focus{top:12px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* age gate */
+.gate{position:fixed;inset:0;z-index:100;display:grid;place-items:center;padding:20px;background:rgba(22,51,23,.62);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);transition:opacity .45s var(--ease),visibility .45s}
+.age-ok .gate{display:none}
+.gate.out{opacity:0;visibility:hidden}
+html:not(.age-ok) body{overflow:hidden}
+.gcard{width:100%;max-width:440px;background:var(--cream);border-radius:28px;padding:36px 32px 28px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:14px;box-shadow:0 30px 80px -20px rgba(10,24,10,.55);transition:transform .45s var(--ease)}
+.gate.out .gcard{transform:translateY(12px) scale(.98)}
+.gcard img{width:96px;height:auto;margin-bottom:6px}
+.gcard h2{font:700 32px/1.05 var(--display);letter-spacing:-.8px}
+.gcard>p{font:500 16px/1.45 var(--display);color:rgba(22,51,23,.85);max-width:320px}
+.gbtns{display:flex;flex-direction:column;gap:10px;width:100%;margin-top:6px}
+.gbtns .btn{width:100%;padding:16px 24px;font-size:17px}
+.gbtns .no{border:1.5px solid rgba(22,51,23,.35);color:var(--green)}
+.gbtns .no:hover{border-color:var(--green)}
+.gcard small{font:400 12px/1.45 var(--text);color:var(--grey);max-width:340px}
+.gcard small a{text-decoration:underline}
+.gask{display:contents}
+.gdenied{display:none}
+.gate.denied .gask{display:none}
+.gate.denied .gdenied{display:flex;flex-direction:column;align-items:center;gap:14px}
+
+/* responsive */
+@media (max-width:1100px){
+  .panel,.fpanel{padding:44px;gap:40px}
+  .dimg{width:380px;height:560px}
+  .fimg{width:400px;height:380px}
+  .rleft{width:440px}
+  .h2x{font-size:60px;line-height:62px}
+}
+@media (max-width:900px){
+  .trust{padding:20px}
+  .trust-in{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  .cards{grid-template-columns:1fr}
+  .panel,.fpanel,.ypanel{flex-direction:column;align-items:stretch}
+  .dimg,.fimg{width:100%}
+  .dimg{height:auto;aspect-ratio:3/4}
+  .fimg{height:auto;aspect-ratio:13/11}
+  .rev .wrap,.faq .wrap{flex-direction:column;gap:32px}
+  .rleft,.fleft{width:100%;position:static}
+  .ypanel{align-items:flex-start}
+  .seal{width:140px;height:140px}
+  .seal svg{width:140px;height:140px}
+}
+@media (max-width:600px){
+  .announce{font-size:10.5px;letter-spacing:.4px;padding:8px 10px}
+  .nav{padding:14px 16px}
+  .logo img{width:96px}
+  .nav .btn{padding:11px 18px;font-size:14px}
+  .hero{padding:92px 16px 96px}
+  .hero-in{gap:18px}
+  .h1{font-size:42px;letter-spacing:-1.2px;margin-top:12px}
+  .sub{font-size:17px}
+  .shop,.why,.contact{padding:44px 16px}
+  .h2,.h2l,.h2r{font-size:36px;line-height:1.08;letter-spacing:-.8px}
+  .lede{font-size:17px}
+  .feel{gap:8px}
+  .feel button{padding:11px 14px;font-size:14px}
+  .dose,.final,.gtee{padding-left:12px;padding-right:12px}
+  .gtee{padding-top:48px}
+  .panel,.fpanel,.ypanel{padding:24px 20px 28px;border-radius:30px;gap:28px}
+  .rimg{height:220px}
+  .step{padding:18px;gap:14px}
+  .rail{left:38px}
+  .mq{padding:8px 0 48px}
+  .mseq span{font-size:52px;letter-spacing:-1px}
+  .mseq img{width:46px}
+  .mseq{gap:20px;padding-right:20px}
+  .mrow.r2 .mseq span{-webkit-text-stroke:1.5px var(--green)}
+  .rev,.faq{padding:64px 16px}
+  .rcard{padding:22px}
+  .rcard q{font-size:17px;line-height:26px}
+  .fq{font-size:18px;line-height:24px;padding:20px}
+  .fa p{padding:0 20px 20px}
+  .h2x{font-size:44px;line-height:46px}
+  .contact h2{font-size:30px}
+  .sticky{display:flex}
+  footer{padding-bottom:120px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition-duration:.01ms!important;animation-duration:.01ms!important}
+  .js .w>span{transform:none}
+}
+
+
+/* product cards, compact horizontal layout for phones and narrow tablets */
+.pcard .ph .lone{height:auto}
+.price .q:empty{display:none}
+@media (max-width:900px){
+  .cards{gap:14px}
+  .pcard{display:grid;grid-row:auto;grid-template-rows:none;grid-template-columns:108px 1fr;
+    grid-template-areas:"img meta" "img title" "img price" "desc desc" "chips chips" "btn btn";
+    column-gap:14px;row-gap:8px;align-content:start;padding:12px 12px 14px;border-radius:22px}
+  .pcard .ph{grid-area:img;height:108px;margin:0;border-radius:16px;align-self:start}
+  .pcard .ph .lone{width:64%;left:18%}
+  .pcard .meta{grid-area:meta;align-self:end;gap:8px}
+  .pcard .meta .chip-dark{font-size:10px;padding:5px 9px}
+  .pcard h3{grid-area:title;font-size:18px;line-height:22px;align-self:center}
+  .pcard .price{grid-area:price;justify-content:flex-start;align-self:start;gap:10px;font-size:13px}
+  .pcard .price b{font-size:16px;line-height:20px}
+  .pcard>p{grid-area:desc;font-size:14px;line-height:20px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;margin-top:4px}
+  .pcard .chips{grid-area:chips;gap:6px;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-right:-12px;padding-right:12px;-webkit-mask-image:linear-gradient(90deg,#000 85%,transparent);mask-image:linear-gradient(90deg,#000 85%,transparent)}
+  .pcard .chips::-webkit-scrollbar{display:none}
+  .pcard .chips .chip{flex:none;white-space:nowrap}
+  .pcard .chips .chip{font-size:11.5px;padding:5px 9px}
+  .pcard .btn{grid-area:btn;padding:13px 20px;font-size:15px;margin-top:2px}
+}
+
+/* touch screens have no hover: every card shows the active state (green stroke + green button) */
+@media (hover:none){
+  .pcard{border-color:var(--green);box-shadow:0 0 0 1.5px var(--green),0 18px 34px -20px rgba(22,51,23,.3)}
+  .pcard .btn-o{color:#fff;border-color:transparent;box-shadow:0 6px 8px rgba(0,77,38,.25)}
+  .pcard .btn-o::before{opacity:1}
+}
+</style>
+</head>
+<body>
+<div class="gate" id="gate" role="dialog" aria-modal="true" aria-labelledby="gateTitle" aria-describedby="gateDesc">
+  <div class="gcard">
+    <img src="assets/mood-logo-green.webp" alt="Mood" width="96" height="22">
+    <div class="gask">
+      <h2 id="gateTitle">Are you 21 or older?</h2>
+      <p id="gateDesc">Mood products are for adults 21 and up. Please confirm your age to continue.</p>
+      <div class="gbtns">
+        <button class="btn btn-g" id="ageYes" type="button">Yes, I'm 21 or older</button>
+        <button class="btn no" id="ageNo" type="button">No, I'm under 21</button>
+      </div>
+    </div>
+    <div class="gdenied" role="alert">
+      <h2>Sorry, you need to be 21 or older.</h2>
+      <p>Mood products are only for adults 21 and up.</p>
+    </div>
+    <small>U.S. federally legal hemp product. Must be 21+ to purchase. Only available to purchase in certain states. By entering you agree to our <a href="https://mood.com/terms-and-conditions" target="_blank" rel="noopener">Terms and Conditions<span class="sr"> (opens in a new tab)</span></a> and <a href="https://mood.com/privacy-policy" target="_blank" rel="noopener">Privacy Policy<span class="sr"> (opens in a new tab)</span></a>.</small>
+  </div>
+</div>
+<a class="skip" href="#main">Skip to content</a>
+<div class="announce">21+ only · Free shipping over $99 · 100-day guarantee · 20% off, already applied</div>
+<header class="nav"><div class="wrap"><a class="logo" href="#main" aria-label="Mood, back to top"><img src="assets/mood-logo-green.webp" alt="Mood" width="112" height="25"></a><a class="btn btn-g" href="#shop">Get in the Mood<svg class="arr" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></header>
+
+<main id="main" tabindex="-1">
+<section class="hero" id="hero">
+  <div class="gfield" id="heroField" aria-hidden="true"></div>
+  <div class="hero-in" id="heroCopy">
+    <span class="pill">Top-shelf hemp THC gummies</span>
+    <h1 class="h1" id="h1"><span class="w"><span style="--i:0">The</span></span> <span class="w"><span class="buzz" style="--i:1">buzz</span></span> <span class="w"><span style="--i:2">you've</span></span> <span class="w"><span style="--i:3">been</span></span> <span class="w"><span style="--i:4">looking</span></span> <span class="w"><span style="--i:5">for.</span></span></h1>
+    <p class="sub">Now 100% federally legal, shipped to your door, and backed by a 100-day guarantee.</p>
+    <span class="offer"><b>20% OFF</b> already applied</span>
+    <a class="btn btn-g" id="heroCta" href="#shop">Get in the Mood<svg class="arr" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <span class="fine">21+. Availability varies by state.</span>
+  </div>
+</section>
+
+<section class="trust" aria-label="Why people trust Mood">
+  <div class="trust-in">
+    <div class="tb"><span class="ic"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 4.5 3.4 8 8 9 4.6-1 8-4.5 8-9V6l-8-3Z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg></span><div><strong>100% federally legal.</strong><span>And 100% the real deal.</span></div></div>
+    <div class="tb"><span class="ic"><svg aria-hidden="true" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.9991 34.5946H27.7199L25.7474 29.9695H16.2499L14.2774 34.5946H20.9982H20.9991ZM18.8327 6C19.6985 6 20.4825 6.35111 21.0497 6.91823C21.6177 7.48534 21.9688 8.26937 21.9688 9.13613C21.9688 10.002 21.6177 10.786 21.0497 11.3531C20.4825 11.9211 19.6985 12.2723 18.8327 12.2723C17.9668 12.2723 17.1828 11.9211 16.6148 11.3531C16.0477 10.786 15.6966 10.002 15.6966 9.13613C15.6966 8.27029 16.0477 7.48626 16.6148 6.91823C17.1819 6.35111 17.9659 6 18.8327 6ZM20.0561 7.91274C19.7426 7.59931 19.3106 7.40629 18.8327 7.40629C18.3547 7.40629 17.9218 7.60023 17.6093 7.91274C17.2959 8.22525 17.1028 8.65817 17.1028 9.13613C17.1028 9.61408 17.2968 10.0461 17.6093 10.3595C17.9218 10.672 18.3547 10.866 18.8327 10.866C19.3106 10.866 19.7426 10.672 20.0561 10.3595C20.3695 10.0461 20.5625 9.61408 20.5625 9.13613C20.5625 8.65817 20.3686 8.22525 20.0561 7.91274ZM15.0293 12.2612C15.7241 12.2612 16.3528 12.5425 16.8078 12.9984C17.2628 13.4534 17.545 14.083 17.545 14.7769C17.545 15.4718 17.2637 16.1005 16.8078 16.5555C16.3528 17.0104 15.7232 17.2926 15.0293 17.2926C14.3344 17.2926 13.7057 17.0104 13.2507 16.5555C12.7957 16.1005 12.5135 15.4709 12.5135 14.7769C12.5135 14.082 12.7948 13.4534 13.2507 12.9984C13.7057 12.5434 14.3353 12.2612 15.0293 12.2612ZM15.8142 13.992C15.6138 13.7907 15.3362 13.6666 15.0293 13.6666C14.7232 13.6666 14.4456 13.7907 14.2443 13.992C14.043 14.1923 13.9189 14.4699 13.9189 14.7769C13.9189 15.083 14.043 15.3606 14.2443 15.5619C14.4447 15.7632 14.7223 15.8873 15.0293 15.8873C15.3353 15.8873 15.6129 15.7632 15.8142 15.5619C16.0155 15.3615 16.1396 15.0839 16.1396 14.7769C16.1396 14.4708 16.0155 14.1933 15.8142 13.992ZM24.2529 11.0682C24.9478 11.0682 25.5765 11.3503 26.0314 11.8053C26.4864 12.2603 26.7686 12.8899 26.7686 13.5839C26.7686 14.2787 26.4864 14.9074 26.0314 15.3624C25.5765 15.8174 24.9468 16.0996 24.2529 16.0996C23.558 16.0996 22.9293 15.8174 22.4743 15.3624C22.0194 14.9074 21.7372 14.2778 21.7372 13.5839C21.7372 12.889 22.0184 12.2603 22.4743 11.8053C22.9293 11.3503 23.5589 11.0682 24.2529 11.0682ZM25.0378 12.7989C24.8365 12.5985 24.5599 12.4735 24.2529 12.4735C23.9468 12.4735 23.6692 12.5976 23.4679 12.7989C23.2666 13.0002 23.1426 13.2769 23.1426 13.5839C23.1426 13.8899 23.2666 14.1675 23.4679 14.3688C23.6692 14.5692 23.9459 14.6942 24.2529 14.6942C24.559 14.6942 24.8365 14.5701 25.0378 14.3688C25.2382 14.1675 25.3623 13.8909 25.3623 13.5839C25.3623 13.2778 25.2382 13.0002 25.0378 12.7989ZM19.5128 21.4315H20.4495C20.8373 21.4315 21.1526 21.7468 21.1526 22.1347C21.1526 22.5226 20.8373 22.8378 20.4495 22.8378H19.2932L16.8519 28.5632H25.15L22.5469 22.4573C22.5083 22.3672 22.4909 22.2744 22.4909 22.1825H22.489V17.846H19.5128V18.8313H20.4495C20.8373 18.8313 21.1526 19.1465 21.1526 19.5344C21.1526 19.9223 20.8373 20.2376 20.4495 20.2376H19.5128V21.4306V21.4315ZM15.1239 29.0384C15.135 29.0062 15.1487 28.9741 15.1644 28.9437L18.1066 22.0428V19.5344V17.1428C18.1066 16.7549 18.4218 16.4397 18.8097 16.4397H23.1922C23.581 16.4397 23.8953 16.7549 23.8953 17.1428V22.0428L26.8375 28.9437C26.8531 28.9741 26.866 29.0053 26.878 29.0375L29.4093 34.9752C29.4589 35.0717 29.4865 35.181 29.4865 35.2969C29.4865 35.6847 29.1712 36 28.7834 36H13.2176V35.9982C13.1257 35.9982 13.0329 35.9798 12.9428 35.9421C12.5862 35.7904 12.4198 35.3787 12.5715 35.022L15.123 29.0375L15.1239 29.0384Z" fill="#163317"/>
+</svg></span><div><strong>Lab tested, every batch.</strong><span>Strength verified. Receipts included.</span></div></div>
+    <div class="tb"><span class="ic"><svg aria-hidden="true" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M33.6918 15.1714H28.6375V9.13871C28.6375 8.64957 28.3114 8.32349 27.8223 8.32349H5.48526C4.99613 8.32349 4.67004 8.64957 4.67004 9.13871C4.67004 9.62784 4.99613 9.95393 5.48526 9.95393H27.007V28.867H16.1647C15.7571 27.0735 14.2081 25.6877 12.3331 25.6877C10.4581 25.6877 8.82766 27.0735 8.50157 28.867H5.48526C4.99613 28.867 4.67004 29.1931 4.67004 29.6822C4.67004 30.1714 4.99613 30.4974 5.48526 30.4974H8.42005C8.82766 32.2909 10.3766 33.6768 12.2515 33.6768C14.1266 33.6768 15.7571 32.2909 16.0831 30.4974H29.6973C30.1049 32.2909 31.6538 33.6768 33.5288 33.6768C35.4038 33.6768 37.0342 32.2909 37.3604 30.4974H39.3169C39.806 30.4974 40.132 30.1714 40.132 29.6822V21.6116C40.132 18.0246 37.2788 15.1714 33.6918 15.1714ZM12.2515 31.9648C10.9472 31.9648 9.96897 30.9051 9.88745 29.6822C9.88745 28.3779 10.9472 27.3997 12.2515 27.3997C13.5559 27.3997 14.5342 28.4594 14.5342 29.6822C14.6157 30.9865 13.5559 31.9648 12.2515 31.9648ZM33.6103 31.9648C32.306 31.9648 31.3277 30.9051 31.3277 29.6822C31.3277 28.3779 32.3875 27.3997 33.6103 27.3997C34.9147 27.3997 35.893 28.4594 35.9744 29.6822C35.893 30.9865 34.8332 31.9648 33.6103 31.9648ZM38.5016 28.867H37.4419C37.0342 27.0735 35.4853 25.6877 33.6103 25.6877C31.7353 25.6877 30.1049 27.0735 29.7788 28.867H28.719V16.8017H33.7734C36.3821 16.8017 38.5831 18.9213 38.5831 21.6116V28.867H38.5016Z" fill="#163317"/>
+<path d="M1.81522 14.03H17.1414C17.6305 14.03 17.9565 13.7039 17.9565 13.2148C17.9565 12.7257 17.6305 12.3995 17.1414 12.3995H1.81522C1.32609 12.3995 1 12.7257 1 13.2148C1 13.7039 1.32609 14.03 1.81522 14.03Z" fill="#163317"/>
+<path d="M12.4131 17.3723C12.4131 16.8832 12.087 16.5571 11.5979 16.5571H1.81522C1.32609 16.5571 1 16.8832 1 17.3723C1 17.8614 1.32609 18.1875 1.81522 18.1875H11.5979C12.087 18.1875 12.4131 17.8614 12.4131 17.3723Z" fill="#163317"/>
+<path d="M6.46057 22.0188C6.46057 22.5079 6.78665 22.834 7.27578 22.834H18.0367C18.5258 22.834 18.8519 22.5079 18.8519 22.0188C18.8519 21.5296 18.5258 21.2035 18.0367 21.2035H7.27578C6.86818 21.2035 6.46057 21.6112 6.46057 22.0188Z" fill="#163317"/>
+</svg></span><div><strong>Delivered to your door.</strong><span>No special card, no lines.</span></div></div>
+    <div class="tb"><span class="ic"><svg aria-hidden="true" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19.2873 13.6094C19.0009 13.8561 18.6444 14.1262 18.2241 14.3002L18.2239 14.3003C17.8074 14.4726 17.3659 14.528 16.9965 14.5519C16.7554 14.5676 16.48 14.5719 16.2372 14.5756C16.1249 14.5774 16.0195 14.579 15.9278 14.5816C15.1961 14.6024 14.9289 14.6966 14.8127 14.8127C14.6966 14.9289 14.6024 15.1961 14.5816 15.9278C14.579 16.0195 14.5774 16.1249 14.5756 16.2372C14.5719 16.48 14.5676 16.7554 14.5519 16.9965C14.528 17.3659 14.4726 17.8074 14.3003 18.2239L14.2996 18.2254C14.1255 18.6443 13.8555 19 13.6091 19.2857C13.4403 19.4814 13.2424 19.688 13.0688 19.8693C12.9978 19.9433 12.9309 20.0132 12.8717 20.0763C12.6418 20.3216 12.4772 20.5162 12.3692 20.6913C12.2653 20.8598 12.25 20.953 12.25 21C12.25 21.047 12.2653 21.1402 12.3692 21.3087C12.4772 21.4838 12.6418 21.6784 12.8717 21.9237C12.9309 21.9868 12.9978 22.0567 13.0688 22.1307C13.2424 22.312 13.4403 22.5186 13.6091 22.7143C13.8555 23 14.1255 23.3557 14.2996 23.7746L14.3004 23.7764C14.4726 24.193 14.528 24.6344 14.5519 25.0039C14.5676 25.245 14.5719 25.5204 14.5756 25.7632C14.5774 25.8755 14.579 25.9808 14.5816 26.0726C14.6024 26.804 14.6966 27.0711 14.8127 27.1873C14.9289 27.3034 15.1961 27.3976 15.9278 27.4184C16.0195 27.421 16.1249 27.4226 16.2372 27.4244C16.48 27.4281 16.7554 27.4324 16.9965 27.4481C17.3659 27.472 17.8074 27.5274 18.2239 27.6997L18.2254 27.7004C18.6443 27.8745 19 28.1446 19.2857 28.3909C19.4814 28.5597 19.688 28.7576 19.8693 28.9312C19.9433 29.0022 20.0132 29.0691 20.0763 29.1283C20.3216 29.3582 20.5162 29.5228 20.6913 29.6308C20.8598 29.7347 20.953 29.75 21 29.75C21.047 29.75 21.1402 29.7347 21.3087 29.6308C21.4838 29.5228 21.6784 29.3582 21.9237 29.1283C21.9868 29.0691 22.0567 29.0022 22.1307 28.9312C22.312 28.7576 22.5186 28.5597 22.7143 28.3909C23 28.1446 23.3557 27.8745 23.7746 27.7004L23.7764 27.6996C24.193 27.5274 24.6344 27.472 25.0039 27.4481C25.245 27.4324 25.5204 27.4282 25.7632 27.4244C25.8755 27.4226 25.9808 27.421 26.0726 27.4184C26.804 27.3976 27.0711 27.3034 27.1873 27.1873C27.3034 27.0711 27.3976 26.804 27.4184 26.0726C27.421 25.9808 27.4226 25.8755 27.4244 25.7632C27.4282 25.5204 27.4324 25.245 27.4481 25.0039C27.472 24.6344 27.5274 24.193 27.6996 23.7764L27.7004 23.7746C27.8745 23.3557 28.1446 23 28.3909 22.7143C28.5597 22.5186 28.7576 22.312 28.9312 22.1307C29.0022 22.0567 29.0691 21.9868 29.1283 21.9237C29.3582 21.6784 29.5228 21.4838 29.6308 21.3087C29.7347 21.1402 29.75 21.047 29.75 21C29.75 20.9531 29.7349 20.8604 29.6311 20.6925C29.5232 20.5178 29.3588 20.3236 29.1287 20.0785C29.0701 20.0161 29.004 19.9472 28.9341 19.8742C28.7597 19.6923 28.5607 19.4847 28.3906 19.2873C28.1439 19.0009 27.8738 18.6444 27.6998 18.2241L27.6996 18.2236C27.5274 17.807 27.472 17.3656 27.4481 16.9961C27.4324 16.755 27.4282 16.4796 27.4244 16.2368C27.4226 16.1245 27.421 16.0192 27.4184 15.9274C27.3976 15.196 27.3034 14.9289 27.1873 14.8127C27.0711 14.6966 26.804 14.6024 26.0726 14.5816C25.9808 14.579 25.8755 14.5774 25.7632 14.5756C25.5204 14.5719 25.245 14.5676 25.0039 14.5519C24.6344 14.528 24.193 14.4726 23.7764 14.3004L23.7746 14.2996C23.3557 14.1255 23 13.8555 22.7143 13.6091C22.5186 13.4403 22.312 13.2424 22.1307 13.0688C22.0567 12.9978 21.9868 12.9309 21.9237 12.8717C21.6784 12.6418 21.4838 12.4772 21.3087 12.3692C21.1402 12.2653 21.047 12.25 21 12.25C20.9531 12.25 20.8604 12.2651 20.6925 12.3689C20.5178 12.4768 20.3236 12.6412 20.0785 12.8713C20.0161 12.9299 19.9472 12.9959 19.8742 13.0659C19.6923 13.2403 19.4847 13.4393 19.2873 13.6094ZM19.6413 10.6674C20.0035 10.4437 20.4609 10.25 21 10.25C21.5389 10.25 21.9965 10.4436 22.3588 10.6671C22.7146 10.8866 23.0308 11.1681 23.2917 11.4128C23.3902 11.5051 23.4788 11.5901 23.5622 11.6701C23.7232 11.8245 23.8649 11.9604 24.0204 12.0945C24.2461 12.2891 24.4125 12.3987 24.5414 12.4525C24.6555 12.4995 24.8384 12.537 25.1333 12.5561C25.3288 12.5688 25.5117 12.5714 25.7199 12.5744C25.8446 12.5762 25.9783 12.5781 26.1293 12.5824C26.7849 12.601 27.8552 12.6522 28.6015 13.3985C29.3478 14.1448 29.399 15.2151 29.4176 15.8707C29.4219 16.0217 29.4238 16.1554 29.4256 16.2801C29.4286 16.4883 29.4312 16.6712 29.4439 16.8667C29.463 17.1621 29.5007 17.345 29.5477 17.4591C29.6015 17.589 29.7112 17.756 29.9058 17.9819C30.0404 18.1381 30.1771 18.2806 30.3326 18.4426C30.4118 18.5251 30.4957 18.6126 30.5868 18.7096C30.8313 18.97 31.113 19.2859 31.3326 19.6413C31.5563 20.0035 31.75 20.4609 31.75 21C31.75 21.5389 31.5564 21.9965 31.3329 22.3588C31.1134 22.7146 30.8319 23.0308 30.5872 23.2917C30.4949 23.3902 30.4099 23.4788 30.3299 23.5622C30.1755 23.7232 30.0396 23.8649 29.9055 24.0204C29.7109 24.2461 29.6013 24.4125 29.5475 24.5415C29.5005 24.6556 29.463 24.8384 29.4439 25.1333C29.4312 25.3288 29.4286 25.5117 29.4256 25.7199C29.4238 25.8446 29.4219 25.9783 29.4176 26.1293C29.399 26.7849 29.3478 27.8552 28.6015 28.6015C27.8552 29.3478 26.7849 29.399 26.1293 29.4176C25.9783 29.4219 25.8446 29.4238 25.7199 29.4256C25.5117 29.4286 25.3288 29.4312 25.1333 29.4439C24.8384 29.463 24.6556 29.5005 24.5415 29.5475C24.4125 29.6013 24.2461 29.7109 24.0204 29.9055C23.8649 30.0396 23.7232 30.1755 23.5622 30.3299C23.4788 30.4099 23.3902 30.4949 23.2917 30.5872C23.0308 30.8319 22.7146 31.1134 22.3588 31.3329C21.9965 31.5564 21.5389 31.75 21 31.75C20.4611 31.75 20.0035 31.5564 19.6412 31.3329C19.2854 31.1134 18.9692 30.8319 18.7083 30.5872C18.6098 30.4949 18.5212 30.4099 18.4378 30.3299C18.2768 30.1755 18.1351 30.0396 17.9796 29.9055C17.7539 29.7109 17.5876 29.6013 17.4586 29.5475C17.3449 29.5006 17.1623 29.463 16.8671 29.4439C16.6716 29.4312 16.4887 29.4286 16.2804 29.4256C16.1558 29.4238 16.0221 29.4219 15.871 29.4176C15.2154 29.399 14.1449 29.3478 13.3985 28.6015C12.6522 27.8552 12.601 26.7849 12.5824 26.1293C12.5781 25.9783 12.5762 25.8446 12.5744 25.7199C12.5714 25.5117 12.5688 25.3288 12.5561 25.1333C12.537 24.8384 12.4995 24.6555 12.4525 24.5414C12.3987 24.4125 12.2891 24.2461 12.0945 24.0204C11.9604 23.8649 11.8245 23.7232 11.6701 23.5622C11.5901 23.4788 11.5051 23.3902 11.4128 23.2917C11.1681 23.0308 10.8866 22.7146 10.6671 22.3588C10.4436 21.9965 10.25 21.5389 10.25 21C10.25 20.4611 10.4436 20.0035 10.6671 19.6412C10.8866 19.2854 11.1681 18.9692 11.4128 18.7083C11.5051 18.6098 11.5901 18.5212 11.6701 18.4378C11.8245 18.2768 11.9604 18.1351 12.0945 17.9796C12.2892 17.7538 12.3988 17.5874 12.4525 17.4585C12.4994 17.3448 12.537 17.1622 12.5561 16.8671C12.5688 16.6716 12.5714 16.4888 12.5744 16.2805C12.5762 16.1558 12.5781 16.0221 12.5824 15.871C12.601 15.2154 12.6522 14.1449 13.3985 13.3985C14.1449 12.6522 15.2154 12.601 15.871 12.5824C16.0221 12.5781 16.1558 12.5762 16.2805 12.5744C16.4888 12.5714 16.6716 12.5688 16.8671 12.5561C17.1627 12.537 17.3454 12.4993 17.4591 12.4523M19.6413 10.6674C19.2859 10.887 18.97 11.1687 18.7096 11.4132ZM18.7096 11.4132C18.6126 11.5043 18.5251 11.5883 18.4426 11.6674ZM18.4426 11.6674C18.2805 11.8229 18.1381 11.9596 17.9819 12.0942ZM17.9819 12.0942C17.7561 12.2888 17.5891 12.3984 17.4592 12.4522Z" fill-rule="evenodd" clip-rule="evenodd" fill="#163317"/>
+<path d="M25.4571 18.0429C25.8476 18.4334 25.8476 19.0666 25.4571 19.4571L20.2071 24.7071C19.8166 25.0976 19.1834 25.0976 18.7929 24.7071L16.5429 22.4571C16.1524 22.0666 16.1524 21.4334 16.5429 21.0429C16.9334 20.6524 17.5666 20.6524 17.9571 21.0429L19.5 22.5858L24.0429 18.0429C24.4334 17.6524 25.0666 17.6524 25.4571 18.0429Z" fill-rule="evenodd" clip-rule="evenodd" fill="#163317"/>
+</svg></span><div><strong>100 days to decide.</strong><span>Not your thing? We'll make it right.</span></div></div>
+  </div>
+</section>
+
+<section class="shop" id="shop">
+  <img class="comp" data-g="3" alt="" aria-hidden="true" style="--s:96px;left:2.5%;top:140px" data-speed="-.18" data-rot="40">
+  <img class="comp" data-g="7" alt="" aria-hidden="true" style="--s:64px;--b:2.5px;right:3%;top:60%" data-speed=".14" data-rot="-30">
+  <div class="wrap">
+    <h2 class="h2">You pick your mood, we'll handle the rest.</h2>
+    <p class="lede">No weird strain names. No chemistry lesson. Just the buzz you're after.</p>
+    <a class="quiz" href="https://mood.com/quiz">Still not sure? Take our 30-second quiz →</a>
+    <div class="feel" id="feel" role="group" aria-label="Choose a feeling">
+      <button type="button" data-mood="better-sleep" aria-pressed="true"><span aria-hidden="true">🌙</span> Sleepy</button>
+      <button type="button" data-mood="chill-out" aria-pressed="false"><span aria-hidden="true">🛋️</span> Chilled Out</button>
+      <button type="button" data-mood="energized-focused" aria-pressed="false"><span aria-hidden="true">⚡</span> Energized/Focused</button>
+      <button type="button" data-mood="feel-happy" aria-pressed="false"><span aria-hidden="true">🎉</span> Happy/Social</button>
+      <button type="button" data-mood="relief" aria-pressed="false"><span aria-hidden="true">☁️</span> Soothed &amp; Comfortable</button>
+      <button type="button" data-mood="better-sex" aria-pressed="false"><span aria-hidden="true">❤️</span> Connected</button>
+    </div>
+    <div class="feeling" aria-live="polite"><span id="feelLine"></span></div>
+    <div class="cards" id="cards"></div>
+  </div>
+</section>
+
+<section class="dose" id="dose">
+  <div class="panel">
+    <img class="comp" data-g="5" alt="" aria-hidden="true" style="--s:120px;--b:3px;right:-34px;top:-46px;z-index:2" data-speed="-.12" data-rot="25">
+    <img class="comp" data-g="2" alt="" aria-hidden="true" style="--s:70px;--b:1px;left:-26px;bottom:90px;z-index:2" data-speed=".1" data-rot="-35">
+    <img class="dimg photo" src="assets/img-04-dialed-in-480.webp" srcset="assets/img-04-dialed-in-480.webp 480w, assets/img-04-dialed-in-960.webp 960w" sizes="(max-width: 900px) 92vw, 480px" alt="Friends sharing a Mood gummy at the kitchen counter. Caption: Found your perfect mood? Keep it." width="480" height="640" loading="lazy" decoding="async">
+    <div class="dcopy">
+      <span class="chip chip-y">How to Mood</span>
+      <h2 class="h2l">Your perfect dose, every single time.</h2>
+      <p>Whether this is your first gummy or your 500th, here's how to find the dose that hits just right, so you can count on it every time.</p>
+      <div class="steps" id="steps">
+        <div class="rail" aria-hidden="true"><i></i></div>
+        <div class="step act"><span class="num">01</span><div><div class="tt"><h3>Pick your starting point</h3><span class="chip">2.5–10 mg hemp THC</span></div><p>New, or coming back after a while? Start with half a gummy. Already know your tolerance? Go with a whole one.</p></div></div>
+        <div class="step act"><span class="num">02</span><div><div class="tt"><h3>Let it do its thing</h3><span class="chip">15 min–2 hr onset</span></div><p>Fast-acting picks kick in within 15 minutes. The rest take their sweet time. Either way, give it the full window before going back for seconds.</p></div></div>
+        <div class="step act"><span class="num">03</span><div><div class="tt"><h3>Lock it in</h3><span class="chip">4–8 hr buzz</span></div><p>Too light? Go up next time. Just right? That's your number now. Every gummy matches its label, so your favorite feels the same tonight, next Friday, and every time after.</p></div></div>
+      </div>
+    </div>
+  </div>
+  <p class="disc">This guidance describes common experiences and is not medical advice. Consult a clinician before use if you take medication, are pregnant, nursing, or have a health condition.</p>
+</section>
+
+<section class="mq" aria-label="Moods" id="mq">
+  <div class="mrow r1"><div class="mtrack" data-dir="1"><div class="mseq"><span>Sleepy</span><img data-g="0" alt="" style="--k:0"><span>Chilled Out</span><img data-g="1" alt="" style="--k:1"><span>Energized</span><img data-g="3" alt="" style="--k:2"><span>Happy</span><img data-g="4" alt="" style="--k:3"><span>Soothed</span><img data-g="7" alt="" style="--k:4"><span>Connected</span><img data-g="5" alt="" style="--k:5"></div><div class="mseq" aria-hidden="true"><span>Sleepy</span><img data-g="0" alt="" style="--k:0"><span>Chilled Out</span><img data-g="1" alt="" style="--k:1"><span>Energized</span><img data-g="3" alt="" style="--k:2"><span>Happy</span><img data-g="4" alt="" style="--k:3"><span>Soothed</span><img data-g="7" alt="" style="--k:4"><span>Connected</span><img data-g="5" alt="" style="--k:5"></div><div class="mseq" aria-hidden="true"><span>Sleepy</span><img data-g="0" alt="" style="--k:0"><span>Chilled Out</span><img data-g="1" alt="" style="--k:1"><span>Energized</span><img data-g="3" alt="" style="--k:2"><span>Happy</span><img data-g="4" alt="" style="--k:3"><span>Soothed</span><img data-g="7" alt="" style="--k:4"><span>Connected</span><img data-g="5" alt="" style="--k:5"></div></div></div>
+  <div class="mrow r2"><div class="mtrack" data-dir="-1"><div class="mseq"><span>Connected</span><img data-g="6" alt="" style="--k:0"><span>Happy</span><img data-g="2" alt="" style="--k:1"><span>Sleepy</span><img data-g="5" alt="" style="--k:2"><span>Soothed</span><img data-g="0" alt="" style="--k:3"><span>Energized</span><img data-g="1" alt="" style="--k:4"><span>Chilled Out</span><img data-g="3" alt="" style="--k:5"></div><div class="mseq" aria-hidden="true"><span>Connected</span><img data-g="6" alt="" style="--k:0"><span>Happy</span><img data-g="2" alt="" style="--k:1"><span>Sleepy</span><img data-g="5" alt="" style="--k:2"><span>Soothed</span><img data-g="0" alt="" style="--k:3"><span>Energized</span><img data-g="1" alt="" style="--k:4"><span>Chilled Out</span><img data-g="3" alt="" style="--k:5"></div><div class="mseq" aria-hidden="true"><span>Connected</span><img data-g="6" alt="" style="--k:0"><span>Happy</span><img data-g="2" alt="" style="--k:1"><span>Sleepy</span><img data-g="5" alt="" style="--k:2"><span>Soothed</span><img data-g="0" alt="" style="--k:3"><span>Energized</span><img data-g="1" alt="" style="--k:4"><span>Chilled Out</span><img data-g="3" alt="" style="--k:5"></div></div></div>
+</section>
+
+<section class="why">
+  <img class="comp" data-g="4" alt="" aria-hidden="true" style="--s:82px;right:3.5%;top:40px" data-speed="-.2" data-rot="50">
+  <div class="wrap">
+    <p class="eyebrow">Why Mood</p>
+    <h2 class="h2">Saying yes just got easy.</h2>
+    <p class="lede">No special card, no lines, no guesswork. Just premium gummies and a better buzz.</p>
+    <div class="tiles">
+      <div class="tile"><h3>100% federally legal</h3><p>And 100% the real deal. The same THC you'd find at a dispensary, just none of the hassle.</p><small>Compliant with the 2018 Farm Bill. 21+ only.</small></div>
+      <div class="tile"><h3>Third-party tested</h3><p>An independent lab checks every batch for potency and purity, so what's on the label is what's in the gummy.</p><small><a href="https://mood.com/blog/mood-third-party-testing-coa" target="_blank" rel="noopener">See the lab results →<span class="sr"> (opens in a new tab)</span></a></small></div>
+      <div class="tile"><h3>100-Day Guarantee</h3><p>If you don't like it, for any reason, you have 100 days to ask for a refund.</p><small><a href="https://mood.com/refund-policy" target="_blank" rel="noopener">How the guarantee works →<span class="sr"> (opens in a new tab)</span></a></small></div>
+    </div>
+  </div>
+</section>
+
+<section class="rev">
+  <img class="comp" data-g="6" alt="" aria-hidden="true" style="--s:72px;--b:2px;left:2.5%;top:55%" data-speed=".16" data-rot="-45">
+  <div class="wrap">
+    <div class="rleft">
+      <span class="chip chip-y">Don't take our word for it</span>
+      <h2 class="h2r"><span class="count" id="count" data-to="139241" aria-hidden="true">139,241</span><span class="sr">139,241</span> five-star reviews mean we're good at what we do.</h2>
+      <img class="rimg photo" src="assets/img-05-reviews-544.webp" srcset="assets/img-05-reviews-544.webp 544w, assets/img-05-reviews-1088.webp 1088w" sizes="(max-width: 900px) 92vw, 544px" alt="Woman relaxing in a hammock holding a Mood Chillout pouch" width="544" height="320" loading="lazy" decoding="async">
+    </div>
+    <div class="rlist">
+      <div class="rcard"><div class="rtop"><span class="stars" aria-label="5 stars">★★★★★</span><span class="chip chip-mint">Evening routine</span></div><q>“One Classic gummy helps me leave the workday behind. I reach for it instead of pouring a second glass of wine, and I wake up feeling like myself.”</q><small>Marianne R. · Verified buyer · Age 62 · Chilled Out</small></div>
+      <div class="rcard"><div class="rtop"><span class="stars" aria-label="5 stars">★★★★★</span><span class="chip chip-mint">Rapid onset</span></div><q>"This comes on quick, within the 10-15 minute mark, even after eating food. And starts with a lot of giggles. I would say it is a classic high that gets you into a very fun mood..."</q><small>Joshua T. · Verified buyer · Hero Dose</small></div>
+      <div class="rcard"><div class="rtop"><span class="stars" aria-label="5 stars">★★★★★</span><span class="chip chip-mint">Consistent dose</span></div><q>“The label tells me exactly what I’m getting, and every jar has felt consistent. No guessing, no dispensary, no pressure.”</q><small>Linda C. · Verified buyer · Age 67 · Soothed &amp; Comfortable</small></div>
+    </div>
+  </div>
+</section>
+
+<section class="faq">
+  <div class="wrap">
+    <div class="fleft">
+      <h2 class="h2l" style="color:var(--green)">Frequently asked questions</h2>
+      <a class="btn" href="https://mood.com/contact" target="_blank" rel="noopener">Still curious? Talk to a real person →</a>
+    </div>
+    <div class="flist" id="faq">
+      <div class="fi open"><button class="fq" aria-expanded="true">Is it legal in my state?<span class="tg" aria-hidden="true"></span></button><div class="fa"><div><p>Yep. Mood is hemp-derived THC, federally legal under the 2018 Farm Bill. We'll verify your address before finalizing your order. We only ship if your state allows it.</p></div></div></div><div class="fi"><button class="fq" aria-expanded="false">Is hemp THC the real thing?<span class="tg" aria-hidden="true"></span></button><div class="fa"><div><p>It sure is. Hemp-derived Delta-9 is the same THC you'd find at a dispensary. Same compound, same buzz, none of the hassle.</p></div></div></div><div class="fi"><button class="fq" aria-expanded="false">What will it feel like?<span class="tg" aria-hidden="true"></span></button><div class="fa"><div><p>A real buzz, without the deep end. Most people describe feeling looser, happier, and a lot more relaxed. How much you feel depends on the dose, what you've eaten, and how long it's been. When in doubt, start slow. You can always take more.</p></div></div></div><div class="fi"><button class="fq" aria-expanded="false">Will it show up on a drug test?<span class="tg" aria-hidden="true"></span></button><div class="fa"><div><p>Yes. THC is THC, hemp-derived or not. If you might get tested, sit this one out.</p></div></div></div><div class="fi"><button class="fq" aria-expanded="false">How much should I take?<span class="tg" aria-hidden="true"></span></button><div class="fa"><div><p>New or coming back? Start with half a Classic gummy (2.5 mg) and give it two hours. Still want more? Go for it. And you'll know your perfect dose for next time.</p></div></div></div><div class="fi"><button class="fq" aria-expanded="false">How long does it last?<span class="tg" aria-hidden="true"></span></button><div class="fa"><div><p>Usually 4 to 8 hours. Clear your evening and leave the car keys alone.</p></div></div></div><div class="fi"><button class="fq" aria-expanded="false">What does the guarantee cover?<span class="tg" aria-hidden="true"></span></button><div class="fa"><div><p>100 days with your first order. Not your thing? We'll replace it or refund you. Guarantee terms apply.</p></div></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="gtee">
+  <div class="ypanel">
+    <div class="seal" id="seal"><svg class="sealSvg" width="200" height="200" role="img" aria-label="100 day guarantee" viewBox="0 0 201 201" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g filter="url(#filter0_d_5225_13618)"><g class="sealStar">
+<use xlink:href="#stroke0_5225_13618" fill="#0A180A"/>
+<mask id="stroke1_5225_13618" fill="white">
+<use xlink:href="#stroke0_5225_13618"/>
+</mask>
+<path d="M100 3.5459L132.334 21.9379L168.203 31.7966L178.062 67.6655L196.454 99.9998L178.062 132.334L168.203 168.203L132.334 178.062L100 196.454L67.6657 178.062L31.7968 168.203L21.9381 132.334L3.54614 99.9998L21.9381 67.6655L31.7968 31.7966L67.6657 21.9379L100 3.5459Z" stroke-width="4" stroke="#FEF7EE" mask="url(#stroke1_5225_13618)"/>
+</g></g>
+<path d="M50.1958 109.525V94.7022H46.9887V91.01H54.1845V109.525H50.1958ZM56.3135 100.281C56.3135 99.0232 56.4753 97.8195 56.7987 96.6696C57.14 95.5017 57.6431 94.4776 58.3079 93.5972C58.9727 92.7169 59.7991 92.0162 60.7873 91.4951C61.7755 90.9561 62.9254 90.6866 64.237 90.6866C65.5485 90.6866 66.6984 90.9561 67.6866 91.4951C68.6748 92.0162 69.5013 92.7169 70.166 93.5972C70.8308 94.4776 71.3249 95.5017 71.6483 96.6696C71.9897 97.8195 72.1604 99.0232 72.1604 100.281C72.1604 101.539 71.9897 102.751 71.6483 103.919C71.3249 105.069 70.8308 106.084 70.166 106.965C69.5013 107.845 68.6748 108.555 67.6866 109.094C66.6984 109.615 65.5485 109.875 64.237 109.875C62.9254 109.875 61.7755 109.615 60.7873 109.094C59.7991 108.555 58.9727 107.845 58.3079 106.965C57.6431 106.084 57.14 105.069 56.7987 103.919C56.4753 102.751 56.3135 101.539 56.3135 100.281ZM68.1448 100.281C68.1448 99.5443 68.0639 98.8256 67.9022 98.1249C67.7585 97.4242 67.5249 96.8043 67.2015 96.2653C66.8961 95.7084 66.4918 95.2682 65.9887 94.9448C65.5036 94.6034 64.9197 94.4327 64.237 94.4327C63.5542 94.4327 62.9613 94.6034 62.4582 94.9448C61.9731 95.2682 61.5689 95.7084 61.2455 96.2653C60.94 96.8043 60.7065 97.4242 60.5448 98.1249C60.401 98.8256 60.3292 99.5443 60.3292 100.281C60.3292 101.018 60.401 101.736 60.5448 102.437C60.7065 103.138 60.94 103.767 61.2455 104.323C61.5689 104.862 61.9731 105.303 62.4582 105.644C62.9613 105.967 63.5542 106.129 64.237 106.129C64.9197 106.129 65.5036 105.967 65.9887 105.644C66.4918 105.303 66.8961 104.862 67.2015 104.323C67.5249 103.767 67.7585 103.138 67.9022 102.437C68.0639 101.736 68.1448 101.018 68.1448 100.281ZM73.4481 100.281C73.4481 99.0232 73.6098 97.8195 73.9332 96.6696C74.2746 95.5017 74.7776 94.4776 75.4424 93.5972C76.1072 92.7169 76.9337 92.0162 77.9218 91.4951C78.91 90.9561 80.0599 90.6866 81.3715 90.6866C82.6831 90.6866 83.833 90.9561 84.8211 91.4951C85.8093 92.0162 86.6358 92.7169 87.3006 93.5972C87.9653 94.4776 88.4594 95.5017 88.7828 96.6696C89.1242 97.8195 89.2949 99.0232 89.2949 100.281C89.2949 101.539 89.1242 102.751 88.7828 103.919C88.4594 105.069 87.9653 106.084 87.3006 106.965C86.6358 107.845 85.8093 108.555 84.8211 109.094C83.833 109.615 82.6831 109.875 81.3715 109.875C80.0599 109.875 78.91 109.615 77.9218 109.094C76.9337 108.555 76.1072 107.845 75.4424 106.965C74.7776 106.084 74.2746 105.069 73.9332 103.919C73.6098 102.751 73.4481 101.539 73.4481 100.281ZM85.2793 100.281C85.2793 99.5443 85.1984 98.8256 85.0367 98.1249C84.893 97.4242 84.6594 96.8043 84.336 96.2653C84.0306 95.7084 83.6263 95.2682 83.1233 94.9448C82.6382 94.6034 82.0542 94.4327 81.3715 94.4327C80.6887 94.4327 80.0958 94.6034 79.5928 94.9448C79.1077 95.2682 78.7034 95.7084 78.38 96.2653C78.0746 96.8043 77.841 97.4242 77.6793 98.1249C77.5356 98.8256 77.4637 99.5443 77.4637 100.281C77.4637 101.018 77.5356 101.736 77.6793 102.437C77.841 103.138 78.0746 103.767 78.38 104.323C78.7034 104.862 79.1077 105.303 79.5928 105.644C80.0958 105.967 80.6887 106.129 81.3715 106.129C82.0542 106.129 82.6382 105.967 83.1233 105.644C83.6263 105.303 84.0306 104.862 84.336 104.323C84.6594 103.767 84.893 103.138 85.0367 102.437C85.1984 101.736 85.2793 101.018 85.2793 100.281ZM117.797 100.092C117.797 101.422 117.545 102.662 117.042 103.811C116.539 104.961 115.848 105.958 114.967 106.803C114.105 107.647 113.09 108.312 111.922 108.797C110.754 109.282 109.514 109.525 108.203 109.525H101.815V90.6597H108.203C109.514 90.6597 110.754 90.9022 111.922 91.3873C113.09 91.8724 114.105 92.5372 114.967 93.3816C115.848 94.2261 116.539 95.2232 117.042 96.3731C117.545 97.523 117.797 98.7627 117.797 100.092ZM113.647 100.092C113.647 99.3197 113.503 98.592 113.215 97.9093C112.928 97.2086 112.533 96.6067 112.03 96.1036C111.545 95.6006 110.961 95.2053 110.278 94.9178C109.595 94.6124 108.867 94.4597 108.095 94.4597H105.858V105.725H108.095C108.867 105.725 109.595 105.581 110.278 105.294C110.961 104.988 111.545 104.584 112.03 104.081C112.533 103.578 112.928 102.985 113.215 102.302C113.503 101.619 113.647 100.883 113.647 100.092ZM129.224 90.6597L136.797 109.525H132.566L130.976 105.455H123.78L122.19 109.525H118.04L125.64 90.6597H129.224ZM125.02 101.979H129.763L127.365 95.8072L125.02 101.979ZM146.847 109.525H142.778V101.332L136.04 90.6597H140.676L144.853 97.5589L149.03 90.6597H153.585L146.847 101.332V109.525Z" fill="#FFFCF8"/>
+<path d="M100.708 62.4102L103.097 69.761L110.826 69.761L104.573 74.3041L106.961 81.655L100.708 77.1119L94.4551 81.655L96.8435 74.3041L90.5905 69.761L98.3197 69.761L100.708 62.4102Z" fill="#FFFCF8"/>
+<path d="M124.639 69.0596L126.132 73.6539H130.962L127.054 76.4933L128.547 81.0876L124.639 78.2482L120.731 81.0876L122.224 76.4933L118.315 73.6539H123.146L124.639 69.0596Z" fill="#FFFCF8"/>
+<path d="M75.4387 69.0596L76.9315 73.6539H81.7622L77.8541 76.4933L79.3469 81.0876L75.4387 78.2482L71.5306 81.0876L73.0234 76.4933L69.1152 73.6539H73.946L75.4387 69.0596Z" fill="#FFFCF8"/>
+<path d="M100.708 119.1L103.097 126.451L110.826 126.451L104.573 130.994L106.961 138.345L100.708 133.802L94.4551 138.345L96.8435 130.994L90.5905 126.451L98.3197 126.451L100.708 119.1Z" fill="#FFFCF8"/>
+<path d="M124.639 119.1L126.132 123.694H130.962L127.054 126.534L128.547 131.128L124.639 128.289L120.731 131.128L122.224 126.534L118.315 123.694H123.146L124.639 119.1Z" fill="#FFFCF8"/>
+<path d="M75.4387 119.1L76.9315 123.694H81.7622L77.8541 126.534L79.3469 131.128L75.4387 128.289L71.5306 131.128L73.0234 126.534L69.1152 123.694H73.946L75.4387 119.1Z" fill="#FFFCF8"/>
+<g class="sealRing"><path d="M65.047 46.1452L71.986 54.8108L70.1786 56.258L65.708 50.6749L67.6285 58.3001L66.4153 59.2715L59.4267 55.7453L63.8775 61.3037L62.0701 62.7509L55.1312 54.0854L57.3966 52.2713L64.9476 56.1193L62.8435 47.9097L65.047 46.1452ZM80.5038 44.5642C80.8448 45.2918 81.0246 46.0366 81.0432 46.7985C81.0713 47.556 80.956 48.2815 80.6972 48.9749C80.4481 49.6639 80.0678 50.2975 79.5566 50.8758C79.0408 51.4445 78.4192 51.8994 77.6916 52.2405C76.964 52.5815 76.2167 52.7684 75.4497 52.801C74.6781 52.8241 73.9431 52.7132 73.2446 52.4685C72.5556 52.2193 71.9242 51.8439 71.3504 51.3422C70.7862 50.836 70.3335 50.2192 69.9925 49.4916C69.6514 48.764 69.4668 48.0215 69.4387 47.264C69.4201 46.5021 69.5354 45.7766 69.7846 45.0876C70.0434 44.3942 70.4306 43.7631 70.9464 43.1944C71.4577 42.6161 72.0771 42.1564 72.8046 41.8153C73.5322 41.4743 74.2817 41.2922 75.0533 41.2692C75.8203 41.2366 76.5483 41.3448 77.2373 41.594C77.9359 41.8387 78.5673 42.2142 79.1315 42.7204C79.7053 43.222 80.1627 43.8367 80.5038 44.5642ZM78.2924 45.6009C78.0904 45.1701 77.8183 44.8014 77.4761 44.4947C77.1434 44.1836 76.7732 43.9543 76.3654 43.8068C75.9673 43.6548 75.5433 43.585 75.0937 43.5973C74.6536 43.6051 74.2182 43.7099 73.7874 43.9119C73.3566 44.1138 72.9927 44.3836 72.6956 44.7214C72.4081 45.0547 72.1906 45.4252 72.0432 45.833C71.9053 46.2362 71.8447 46.6675 71.8614 47.1267C71.8878 47.5814 72.0019 48.0242 72.2039 48.455C72.4058 48.8858 72.6731 49.2567 73.0058 49.5678C73.348 49.8745 73.7182 50.1038 74.1164 50.2557C74.5242 50.4032 74.9481 50.4731 75.3882 50.4653C75.8378 50.453 76.278 50.3459 76.7088 50.144C77.1396 49.942 77.4988 49.6744 77.7862 49.3412C78.0833 49.0034 78.3008 48.6329 78.4387 48.2296C78.5862 47.8218 78.6468 47.3906 78.6204 46.9359C78.6037 46.4767 78.4943 46.0317 78.2924 45.6009ZM90.6486 36.4212L93.1159 47.245L90.7966 47.7737L84.081 41.7897L85.7094 48.9334L83.4519 49.448L80.9845 38.6242L83.3503 38.0849L90.0266 44.1105L88.3911 36.9359L90.6486 36.4212ZM93.914 35.9754L100.44 35.6608L100.544 37.8151L96.394 38.0152L96.5025 40.2646L100.288 40.0821L100.389 42.173L96.6033 42.3556L96.7209 44.7951L100.903 44.5934L101.007 46.7478L94.4487 47.064L93.914 35.9754ZM107.244 47.3843L104.864 47.1241L105.387 42.3315L102.128 35.6577L104.84 35.954L106.842 40.257L109.727 36.4882L112.391 36.7793L107.768 42.5917L107.244 47.3843ZM118.437 38.338L122.254 39.7226C122.731 39.8957 123.15 40.1207 123.51 40.3978C123.871 40.6748 124.152 40.9849 124.354 41.328C124.565 41.6747 124.688 42.0508 124.72 42.4564C124.763 42.8655 124.703 43.2937 124.541 43.741C124.372 44.2081 124.115 44.576 123.77 44.8445C123.425 45.113 123.028 45.2782 122.578 45.3399C123.098 45.765 123.438 46.2539 123.598 46.8066C123.761 47.3493 123.732 47.9238 123.512 48.5301C123.339 49.0072 123.095 49.4021 122.779 49.7149C122.473 50.0313 122.112 50.266 121.697 50.4189C121.285 50.562 120.82 50.6183 120.303 50.588C119.795 50.5613 119.258 50.4451 118.691 50.2396L114.651 48.7739L118.437 38.338ZM119.239 48.3125C119.716 48.4856 120.138 48.5151 120.506 48.401C120.873 48.2869 121.135 48.0161 121.29 47.5888C121.441 47.1713 121.412 46.801 121.203 46.4778C120.998 46.1446 120.657 45.8915 120.18 45.7184L118.465 45.0964L117.524 47.6905L119.239 48.3125ZM120.521 43.8009C120.909 43.9415 121.261 43.9625 121.578 43.8638C121.909 43.7588 122.142 43.5174 122.279 43.1397C122.416 42.7621 122.39 42.4319 122.2 42.1493C122.024 41.8604 121.742 41.6457 121.354 41.505L119.953 40.9966L119.12 43.2925L120.521 43.8009ZM133.441 45.1633L131.684 56.996L129.535 55.7391L129.936 53.1996L126.281 51.0621L124.264 52.657L122.156 51.4241L131.62 44.0985L133.441 45.1633ZM127.943 49.6643L130.353 51.0733L130.967 47.2257L127.943 49.6643ZM135.072 52.6808C135.601 52.0622 136.205 51.5839 136.884 51.2461C137.569 50.9002 138.274 50.7029 138.997 50.654C139.728 50.597 140.454 50.6829 141.177 50.9115C141.9 51.1402 142.566 51.5156 143.177 52.038C143.546 52.3541 143.867 52.719 144.14 53.1327C144.419 53.5384 144.641 53.986 144.807 54.4755L143.167 56.3917C143.052 55.8758 142.881 55.4092 142.653 54.992C142.426 54.5748 142.115 54.1978 141.722 53.8611C141.352 53.5449 140.952 53.3211 140.522 53.1897C140.107 53.0571 139.68 53.0116 139.24 53.0534C138.816 53.0939 138.402 53.2199 137.999 53.4313C137.602 53.6347 137.249 53.9172 136.94 54.2787C136.631 54.6403 136.402 55.0292 136.255 55.4457C136.115 55.869 136.058 56.2933 136.084 56.7188C136.118 57.1511 136.229 57.5661 136.417 57.9638C136.614 58.3685 136.901 58.7323 137.279 59.0553C137.664 59.3852 138.077 59.6342 138.518 59.8023C138.965 59.9624 139.457 60.0703 139.994 60.1259L138.355 62.0421C137.807 61.9349 137.31 61.7674 136.865 61.5396C136.413 61.3199 136.018 61.0657 135.68 60.777C135.054 60.241 134.568 59.6377 134.223 58.9672C133.886 58.2886 133.685 57.5881 133.621 56.8657C133.572 56.1422 133.666 55.4225 133.903 54.7066C134.146 53.9828 134.536 53.3075 135.072 52.6808ZM145.264 60.709L151.035 60.801L152.851 63.0032L145.907 62.8098L144.489 70.3118L142.582 67.9995L143.703 62.6546L142.94 62.6264L140.089 64.9776L138.565 63.1302L147.129 56.0663L148.653 57.9137L145.264 60.709Z" fill="white"/>
+<path d="M67.6683 146.85C67.7818 146.256 67.7299 145.693 67.5125 145.163C67.2951 144.633 66.9317 144.17 66.4223 143.774C66.0465 143.482 65.6407 143.281 65.2047 143.17C64.7772 143.066 64.345 143.045 63.9083 143.107C63.4716 143.17 63.0494 143.317 62.6415 143.549C62.2486 143.779 61.9029 144.087 61.6046 144.471C61.3064 144.855 61.0911 145.27 60.9589 145.716C60.8414 146.16 60.8066 146.602 60.8542 147.04C60.9018 147.479 61.0301 147.9 61.2391 148.303C61.4546 148.698 61.7502 149.041 62.126 149.333C62.7105 149.787 63.3315 150.022 63.989 150.037C64.653 150.044 65.2379 149.842 65.7439 149.432L63.2011 147.457L64.4266 145.879L68.9862 149.419L68.4415 150.121C67.9681 150.731 67.4154 151.218 66.7833 151.584C66.1576 151.942 65.5003 152.167 64.8114 152.262C64.129 152.348 63.433 152.296 62.7235 152.106C62.0288 151.915 61.3683 151.576 60.742 151.09C60.099 150.59 59.5885 150.007 59.2106 149.338C58.8475 148.668 58.6202 147.97 58.5287 147.243C58.4437 146.507 58.4941 145.77 58.6799 145.031C58.8741 144.298 59.2143 143.619 59.7006 142.992C60.187 142.366 60.7652 141.871 61.4354 141.508C62.1055 141.145 62.804 140.918 63.531 140.826C64.2727 140.733 65.0141 140.787 65.7552 140.987C66.5028 141.18 67.1897 141.519 67.816 142.005C68.7012 142.693 69.3347 143.506 69.7166 144.445C70.1068 145.39 70.2059 146.357 70.0138 147.346L67.6683 146.85ZM71.3949 157.854C70.7704 157.543 70.2593 157.17 69.8616 156.735C69.4686 156.291 69.1914 155.805 69.03 155.275C68.8686 154.746 68.8206 154.179 68.8861 153.573C68.961 152.973 69.1541 152.36 69.4654 151.736L72.4511 145.746L74.6085 146.821L71.6794 152.697C71.3445 153.369 71.2365 153.977 71.3554 154.521C71.4743 155.064 71.8318 155.485 72.4279 155.782C73.024 156.079 73.5749 156.111 74.0806 155.879C74.5862 155.647 75.0065 155.195 75.3414 154.523L78.2705 148.647L80.4279 149.722L77.4422 155.712C77.1309 156.336 76.7532 156.857 76.3093 157.274C75.8748 157.695 75.3976 158 74.8777 158.19C74.3578 158.38 73.8024 158.452 73.2113 158.405C72.6249 158.349 72.0194 158.165 71.3949 157.854ZM86.8181 151.604L88.1229 163.495L85.7248 162.825L85.468 160.267L81.3898 159.127L79.8443 161.182L77.492 160.525L84.7866 151.036L86.8181 151.604ZM82.6429 157.353L85.3312 158.104L84.949 154.227L82.6429 157.353ZM92.7228 164.033L90.3701 163.813L91.4037 152.76L95.0829 153.104C95.6829 153.16 96.2229 153.29 96.7029 153.494C97.1829 153.699 97.5823 153.97 97.9012 154.307C98.2315 154.636 98.476 155.03 98.6347 155.491C98.7943 155.941 98.8476 156.451 98.7944 157.019C98.7206 157.809 98.4423 158.457 97.9595 158.964C97.4882 159.461 96.9091 159.805 96.2223 159.996L98.8652 164.608L96.0704 164.346L93.7325 160.05L93.1008 159.991L92.7228 164.033ZM93.284 158.033L94.6261 158.158C95.0998 158.203 95.5011 158.113 95.83 157.889C96.1705 157.655 96.3623 157.307 96.4056 156.843C96.4499 156.37 96.3255 155.997 96.0324 155.725C95.7507 155.444 95.373 155.281 94.8993 155.237L93.5571 155.112L93.284 158.033ZM105.74 152.993L111.126 163.674L108.645 163.886L107.509 161.58L103.29 161.94L102.561 164.406L100.128 164.614L103.638 153.172L105.74 152.993ZM103.842 159.84L106.623 159.602L104.907 156.104L103.842 159.84ZM119.842 149.696L122.957 160.352L120.674 161.019L113.61 155.45L115.665 162.483L113.443 163.133L110.328 152.477L112.657 151.796L119.684 157.409L117.62 150.346L119.842 149.696ZM120.279 149.609L127.653 145.916L128.647 147.902L126.038 149.208L130.015 157.149L127.873 158.222L123.897 150.28L121.273 151.594L120.279 149.609ZM128.156 145.539L133.507 141.789L134.745 143.555L131.342 145.94L132.635 147.784L135.739 145.608L136.94 147.323L133.836 149.498L135.238 151.498L138.667 149.095L139.905 150.861L134.528 154.63L128.156 145.539ZM134.366 141.051L139.128 136.577L140.605 138.149L137.577 140.994L139.119 142.635L141.881 140.04L143.315 141.565L140.553 144.161L142.225 145.94L145.276 143.073L146.753 144.645L141.968 149.141L134.366 141.051Z" fill="white"/>
+</g><defs>
+<filter id="filter0_d_5225_13618" x="3.54614" y="3.5459" width="196.908" height="196.908" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="4" dy="4"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.086 0 0 0 0 0.2 0 0 0 0 0.09 0 0 0 1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_5225_13618"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_5225_13618" result="shape"/>
+</filter>
+<path id="stroke0_5225_13618" d="M100 3.5459L132.334 21.9379L168.203 31.7966L178.062 67.6655L196.454 99.9998L178.062 132.334L168.203 168.203L132.334 178.062L100 196.454L67.6657 178.062L31.7968 168.203L21.9381 132.334L3.54614 99.9998L21.9381 67.6655L31.7968 31.7966L67.6657 21.9379L100 3.5459Z"/>
+</defs>
+</svg>
+</div>
+    <div class="gcopy">
+      <span class="chip">Our promise to you</span>
+      <h2 class="h2l" style="color:var(--green)">Not feeling it? We'll make it right.</h2>
+      <p>Take your time with your first order. If it's not for you, we'll make it right with a replacement or full refund.</p>
+      <a class="btn btn-g" href="#shop">Try it risk-free<svg class="arr" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="fwrap" id="fwrap">
+    <div class="fpanel" id="fpanel">
+      <div class="fcopy" id="fcopy">
+        <span class="chip chip-y">20% off is already applied · No code</span>
+        <h2 class="h2x">Your buzz is waiting.</h2>
+        <p>Pick a mood, choose a strength. Your 20% off is already in the cart.</p>
+        <a class="btn" id="finalCta" href="#shop">Get in the Mood<svg class="arr" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <small>21+ only · Third-party tested · Discreet delivery · 100-day guarantee</small>
+      </div>
+      <img class="fimg photo" id="fimg" src="assets/img-06-final-cta-520.webp" srcset="assets/img-06-final-cta-520.webp 520w, assets/img-06-final-cta-1040.webp 1040w" sizes="(max-width: 900px) 92vw, 520px" alt="Friends laughing at a garden dinner table at dusk, sharing gummies next to a Mood Fruit Zinger Mix pouch" width="520" height="440" loading="lazy" decoding="async">
+    </div>
+    <div class="gfield" id="finalField" aria-hidden="true"></div>
+  </div>
+</section>
+
+<section class="contact">
+  <div class="wrap">
+    <h2>Questions? Talk to a real human. We don't bite.</h2>
+    <div class="citems">
+      <a class="citem" href="tel:+14055947026"><span>Call us</span><b>+1 405-594-7026</b></a>
+      <a class="citem" href="https://mood.com/contact" target="_blank" rel="noopener"><span>Email</span><b>team@mood.com</b></a>
+      <a class="citem" href="https://mood.com/contact" target="_blank" rel="noopener"><span>Chat with us 24/7</span><b>Chat now →</b></a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <img class="flogo" src="assets/mood-logo-cream.webp" alt="Mood" width="112" height="25">
+    <div class="links"><a href="https://mood.com/terms-and-conditions" target="_blank" rel="noopener">Terms and Conditions<span class="sr"> (opens in a new tab)</span></a><a href="https://mood.com/privacy-policy" target="_blank" rel="noopener">Privacy Policy<span class="sr"> (opens in a new tab)</span></a><a href="https://mood.com/privacy-policy/california" target="_blank" rel="noopener">California Privacy Notice<span class="sr"> (opens in a new tab)</span></a><a href="https://mood.com/contact" target="_blank" rel="noopener">Contact Us<span class="sr"> (opens in a new tab)</span></a></div>
+    <hr>
+    <p>These statements have not been evaluated by the Food and Drug Administration. These products are not intended to diagnose, treat, cure, mitigate or prevent any disease. U.S. federally legal hemp product. Must be 21+ to purchase. Only available to purchase in certain states, and we only ship where state law allows. Consult a clinician before use if you take medication, are pregnant or nursing. Do not drive or operate machinery after use.</p>
+    <p>Copyright © 2026 Mood. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<div class="sticky" id="sticky"><a class="btn btn-g" href="#shop">Get in the Mood<svg class="arr" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><small>21+ only · 20% off already applied · 100-day guarantee</small></div>
+
+<script>
+(()=>{
+const G=["assets/gummy-1.webp", "assets/gummy-2.webp", "assets/gummy-3.webp", "assets/gummy-4.webp", "assets/gummy-5.webp", "assets/gummy-6.webp", "assets/gummy-7.webp", "assets/gummy-8.webp"];
+document.querySelectorAll('[data-g]').forEach(i=>i.src=G[+i.dataset.g]);
+const doc=document.documentElement;
+const RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const FINE=matchMedia('(pointer: fine)').matches;
+doc.classList.add('js');
+const clamp=(v,a,b)=>v<a?a:v>b?b:v, rnd=(a,b)=>a+Math.random()*(b-a);
+let VH=innerHeight, VW=innerWidth;
+
+/* pointer */
+const P={x:-1e4,y:-1e4,vx:0,vy:0,t:0,tap:0};
+addEventListener('pointermove',e=>{P.vx=e.clientX-P.x;P.vy=e.clientY-P.y;P.x=e.clientX;P.y=e.clientY;P.t=performance.now()},{passive:true});
+addEventListener('pointerdown',e=>{P.x=e.clientX;P.y=e.clientY;P.vx=P.vy=0;P.t=performance.now();P.tap=1},{passive:true});
+document.addEventListener('mouseleave',()=>{P.x=P.y=-1e4});
+
+/* ---------- gummy field ---------- */
+class Field{
+  constructor(host,layer,o){
+    this.host=host;this.layer=layer;this.o=o;this.ps=[];this.dropped=false;this.vis=false;
+    const mob=VW<700, n=mob?o.mCount:o.count, order=[...G.keys()].sort(()=>Math.random()-.5);
+    for(let i=0;i<n;i++){
+      const d=i/(n-1||1)*0.95+Math.random()*0.05;
+      const el=new Image();el.src=G[order[i%G.length]];el.alt='';el.className='gum'+(d>.84?' front':d<.2?' back':'');el.style.zIndex=d>.84?3:1;el.decoding='async';el.draggable=false;
+      const sz=(mob?o.mSize:o.size)*(0.55+d*0.8);
+      el.style.width=sz.toFixed(0)+'px';
+      layer.appendChild(el);
+      this.ps.push({el,d,sz,x:0,y:0,vx:0,vy:0,r:0,vr:0,tx:0,ty:0,rest:rnd(-28,28),ph:rnd(0,6.28),st:'wait',delay:0,on:false});
+    }
+  }
+  rects(){
+    const hr=this.host.getBoundingClientRect(),pad=this.o.pad||16;
+    return this.o.avoid().map(([el,shrink])=>{const r=el.getBoundingClientRect(),sx=r.width*(shrink||0)/2,sy=r.height*(shrink||0)/2;
+      return {l:r.left-hr.left-pad+sx,t:r.top-hr.top-pad+sy,r:r.right-hr.left+pad-sx,b:r.bottom-hr.top+pad-sy}});
+  }
+  layout(){
+    const W=this.host.clientWidth,H=this.host.clientHeight,ex=this.rects(),out=this.o.out||0,placed=[];
+    const sorted=[...this.ps].sort((a,b)=>b.sz-a.sz);
+    for(const p of sorted){
+      let best=null,bestScore=-1e9;
+      for(let k=0;k<260;k++){
+        const h=p.sz/2,x=rnd(-out+h*.4,W+out-h*.4),y=rnd(this.o.top!=null?this.o.top:-out+h*.4,H+out-h*.4);
+        let hit=0;for(const e of ex){if(x+h*.92>e.l&&x-h*.92<e.r&&y+h*.92>e.t&&y-h*.92<e.b){hit=1;break}}
+        if(hit)continue;
+        let md=1e9;for(const q of placed){md=Math.min(md,Math.hypot(q.tx-x,q.ty-y)-(q.sz+p.sz)/2)}
+        if(md>bestScore){bestScore=md;best=[x,y]}
+        if(md>18)break;
+      }
+      p.skip=!best;p.el.style.display=best?'':'none';
+      if(!best)continue;
+      p.tx=best[0];p.ty=best[1];placed.push(p);
+    }
+  }
+  drop(){
+    if(this.dropped)return;this.dropped=true;
+    const base=this.o.delay||0;
+    [...this.ps].sort((a,b)=>a.ty-b.ty).forEach((p,i)=>{p.delay=base+i*this.o.stagger+rnd(0,120);});
+    this.t0=performance.now();
+  }
+  place(){ // reduced motion: static
+    for(const p of this.ps){if(p.skip)continue;p.x=p.tx;p.y=p.ty;p.r=p.rest;p.st='live';p.el.classList.add('on');this.render(p,0)}
+  }
+  render(p,par){p.el.style.transform=`translate3d(${(p.x-p.sz/2).toFixed(1)}px,${(p.y+par*(p.d-.35)-p.sz/2).toFixed(1)}px,0) rotate(${p.r.toFixed(1)}deg)`}
+  step(dt,now,tap){
+    if(!this.dropped)return;
+    const hr=this.host.getBoundingClientRect(),el=now-this.t0,t=now/1000;
+    const px=P.x-hr.left,py=P.y-hr.top,recent=now-P.t<(FINE?1e9:700),R=FINE?150:110;
+    const par=this.o.parallax?hr.top*this.o.parallax:0;
+    for(const p of this.ps){
+      if(p.skip)continue;
+      if(p.st==='wait'){
+        if(el<p.delay)continue;
+        p.st='fall';p.x=p.tx+rnd(-40,40);p.y=-p.sz-rnd(20,160)-(this.o.fromTop?hr.top>0?0:0:0)+(this.o.startY||0);
+        p.vx=(p.tx-p.x)*.9;p.vy=rnd(80,260);p.r=rnd(-160,160);p.vr=rnd(-260,260);
+        p.el.classList.add('on');
+      }
+      if(p.st==='fall'){
+        p.vy+=2100*dt;p.x+=p.vx*dt;p.y+=p.vy*dt;p.r+=p.vr*dt;
+        if(p.y>=p.ty){p.st='live';p.vy*=.55;p.rest+=360*Math.round((p.r-p.rest)/360);}
+      }else{
+        const amp=5+p.d*7;
+        const hx=p.tx+Math.sin(t*.55+p.ph)*amp, hy=p.ty+Math.cos(t*.45+p.ph*1.3)*amp*1.25;
+        let ax=-70*(p.x-hx)-8.5*p.vx, ay=-70*(p.y-hy)-8.5*p.vy;
+        const tr=p.rest+Math.sin(t*.4+p.ph)*7;
+        let ar=-38*(p.r-tr)-7*p.vr;
+        if(recent){
+          const dx=p.x-px,dy=p.y+par*(p.d-.35)-py,dist=Math.hypot(dx,dy)||1,rr=R+p.sz*.5;
+          if(dist<rr){const f=1-dist/rr,F=f*f*(9000+p.d*7000);ax+=dx/dist*F;ay+=dy/dist*F;ar+=(dx>0?1:-1)*f*f*2600+P.vx*f*14;}
+          if(tap&&dist<rr*1.6){const f=1-dist/(rr*1.6);p.vx+=dx/dist*f*1100;p.vy+=dy/dist*f*1100-f*300;p.vr+=rnd(-500,500)*f;}
+        }
+        p.vx+=ax*dt;p.vy+=ay*dt;p.x+=p.vx*dt;p.y+=p.vy*dt;p.vr+=ar*dt;p.r+=p.vr*dt;
+      }
+      this.render(p,par);
+    }
+  }
+}
+
+const hero=document.getElementById('hero'), fwrap=document.getElementById('fwrap');
+const heroField=new Field(hero,document.getElementById('heroField'),{
+  count:12,mCount:8,size:118,mSize:66,stagger:70,delay:250,out:20,top:-10,parallax:.28,pad:20,
+  avoid:()=>[...document.getElementById('heroCopy').children].map(e=>[e])
+});
+const finalField=new Field(fwrap,document.getElementById('finalField'),{
+  count:11,mCount:7,size:104,mSize:62,stagger:85,delay:0,out:34,pad:14,startY:-40,
+  avoid:()=>[[document.getElementById('fcopy')],[document.getElementById('fimg'),.1],[document.querySelector('.ypanel')],[document.querySelector('.contact h2')]]
+});
+const fields=[heroField,finalField];
+
+/* ---------- scroll-driven modules ---------- */
+const comps=[...document.querySelectorAll('.comp')];
+const steps=document.getElementById('steps'),stepEls=[...steps.querySelectorAll('.step')],rail=steps.querySelector('.rail'),railFill=rail.querySelector('i');
+let nums=[];
+function layoutRail(){
+  nums=stepEls.map(s=>{const n=s.querySelector('.num');return s.offsetTop+n.offsetTop+n.offsetHeight/2});
+  rail.style.top=nums[0]+'px';rail.style.height=(nums[nums.length-1]-nums[0])+'px';
+  rail.style.left=(stepEls[0].querySelector('.num').offsetLeft+22)+'px';
+}
+const tracks=[...document.querySelectorAll('.mtrack')].map(el=>({el,dir:+el.dataset.dir,w:0,seq:el.querySelector('.mseq')}));
+function layoutTracks(){tracks.forEach(t=>t.w=t.seq.getBoundingClientRect().width)}
+const sealStar=document.querySelector('.sealStar'),sealRing=document.querySelector('.sealRing'),seal=document.getElementById('seal');
+const fpanel=document.getElementById('fpanel'),mq=document.getElementById('mq');
+
+/* visibility */
+const vis=new Map();
+const io=new IntersectionObserver(es=>es.forEach(e=>vis.set(e.target,e.isIntersecting)),{rootMargin:'200px 0px'});
+[hero,fwrap,steps,mq,seal,fpanel,...comps].forEach(el=>io.observe(el));
+
+/* final rain trigger */
+new IntersectionObserver((es,o)=>es.forEach(e=>{if(e.isIntersecting){finalField.layout();RM?finalField.place():finalField.drop();o.disconnect()}}),{threshold:.35}).observe(fpanel);
+
+/* count-up */
+const count=document.getElementById('count');
+if(!RM){
+  const to=+count.dataset.to;count.textContent='0';
+  new IntersectionObserver((es,o)=>es.forEach(e=>{if(!e.isIntersecting)return;o.disconnect();const t0=performance.now(),D=1600;
+    (function f(n){const k=clamp((n-t0)/D,0,1),v=Math.round(to*(1-Math.pow(1-k,3)));count.textContent=v.toLocaleString('en-US');if(k<1)requestAnimationFrame(f)})(t0)}),{threshold:.6}).observe(count);
+}
+
+/* main loop */
+let last=performance.now(),started=false;
+function frame(now){
+  const dt=Math.min((now-last)/1000,1/30);last=now;
+  const tap=P.tap;P.tap=0;
+  for(const f of fields){if(vis.get(f.host))f.step(dt,now,tap)}
+  // companions
+  for(const c of comps){if(!vis.get(c)||!c.offsetParent)continue;const r=c.getBoundingClientRect(),off=(r.top+r.height/2-VH/2);
+    c.style.transform=`translate3d(0,${(off*+c.dataset.speed).toFixed(1)}px,0) rotate(${(off*.06*Math.sign(+c.dataset.rot)+ +c.dataset.rot).toFixed(1)}deg)`}
+  // dose rail
+  if(vis.get(steps)){const r=steps.getBoundingClientRect(),len=nums[nums.length-1]-nums[0];
+    const p=clamp((VH*.62-(r.top+nums[0]))/len,0,1);railFill.style.transform=`scaleY(${p.toFixed(3)})`;
+    stepEls.forEach((s,i)=>s.classList.toggle('act',p*len>=nums[i]-nums[0]-2));}
+  // marquee
+  if(vis.get(mq)){const sy=scrollY;for(const t of tracks){if(!t.w)continue;let x=(now*.022+sy*.45)%t.w;x=t.dir>0?-x:x-t.w;t.el.style.transform=`translate3d(${x.toFixed(1)}px,0,0)`;}
+    mq.style.setProperty('--rot',(sy*.25%360).toFixed(1)+'deg')}
+  // seal
+  if(vis.get(seal)&&!seal.classList.contains('spun')){const r=seal.getBoundingClientRect();if(r.top<VH*.8)seal.classList.add('spun')}
+  // final panel reveal
+  if(vis.get(fpanel)){const r=fpanel.getBoundingClientRect(),k=1-clamp((VH-r.top)/(VH*.5),0,1);
+    fpanel.style.clipPath=k<.002?'none':`inset(${(k*5).toFixed(2)}% ${(k*6).toFixed(2)}% ${(k*5).toFixed(2)}% ${(k*6).toFixed(2)}% round ${(44+k*90).toFixed(0)}px)`}
+  requestAnimationFrame(frame);
+}
+
+/* attribution: forward AppLovin/UTM params from the landing URL to every mood.com link (no reload, no redirect) */
+const FWD=/^(utm_|aleid$|alart$|axwrt$|gclid$|fbclid$|ttclid$|irclickid$)/;
+const inParams=[...new URLSearchParams(location.search)].filter(([k])=>FWD.test(k));
+function forward(root){if(!inParams.length)return;(root||document).querySelectorAll('a[href^="https://mood.com"]').forEach(a=>{try{const u=new URL(a.href);inParams.forEach(([k,v])=>{if(!u.searchParams.has(k))u.searchParams.set(k,v)});a.href=u.toString()}catch(e){}})}
+forward();
+
+/* categories: moods and products (links and data from the live Gummies For All page) */
+const MOODS=[{"id": "better-sleep", "label": "Sleepy", "tagline": "For a better, more restful night’s sleep.", "see_all": "https://mood.com/shop/benefits?filter=better-sleep", "products": [{"name": "Sleep Gummies", "url": "https://mood.com/product/sleep-gummies", "potency": "High potency", "rating": "4.61", "reviews": "9.7k", "from_price": "$29", "desc": "A soft, heavy calm that loosens every knot and lets you slip into deep, restful sleep, without the groggy morning after.", "chips": ["15mg Delta-9 THC + 15mg CBN", "0.5mg Melatonin", "45–120 min onset"], "count": "10 count", "g": 7}, {"name": "Sleep Gummies – Melatonin Free", "url": "https://mood.com/product/sleep-gummies-melatonin-free", "potency": "High potency", "rating": "4.43", "reviews": "3.9k", "from_price": "$35", "desc": "Your mind goes quiet, your body sinks into the sheets, and deep, effortless sleep pulls you under, so you wake up feeling brand new.", "chips": ["15mg Delta-9 THC", "6 sleep-enhancing botanicals", "5–15 min onset"], "count": "10 count", "g": 5}, {"name": "Sleep Cap Gummies", "url": "https://mood.com/product/sleep-cap-gummies", "potency": "THC-free", "rating": "3.83", "reviews": "6", "from_price": "$30", "desc": "Drift off clear and calm as a gentle wave of mushroom-powered relaxation carries you into restful sleep. No buzz, no THC, no psychoactive effects.", "chips": ["0mg THC", "4 functional mushrooms + 4 botanicals", "Vegan, gluten-free"], "count": "60 count", "g": 3}]}, {"id": "chill-out", "label": "Chilled Out", "tagline": "For calming down and letting go.", "see_all": "https://mood.com/shop/benefits?filter=chill-out", "products": [{"name": "Chillout 25mg Delta 8 THC Gummies", "url": "https://mood.com/product/chillout-25mg-delta-8-thc-gummies", "potency": "Medium potency", "rating": "4.57", "reviews": "4.2k", "from_price": "$29", "desc": "A smooth, mellow, clear-headed buzz perfect for easing stress and softening life’s edges.", "chips": ["25mg Delta-8 THC + 25mg CBD", "45–120 min onset"], "count": "10 count", "g": 6}, {"name": "25mg Delta-8 THC Gel Caps", "url": "https://mood.com/product/25mg-delta-8-thc-gel-caps", "potency": "Medium potency", "rating": "4.32", "reviews": "575", "from_price": "$49", "desc": "A long weekend in a capsule. A smooth, easygoing buzz washes over you, melts the stress away, and leaves you blissfully unbothered.", "chips": ["25mg Delta-8 THC / capsule", "Precise dosage", "Long-lasting high"], "count": "30 count", "g": 1}, {"name": "15mg Delta 9 THC Gummies", "url": "https://mood.com/product/15mg-delta-9-thc-gummies", "potency": "High potency", "rating": "4.6", "reviews": "14.2k", "from_price": "$19", "desc": "A powerful mind and body buzz balanced out with CBD to help relax the body and ease nerves.", "chips": ["15mg Delta-9 THC + 15mg CBD", "45–120 min onset"], "count": "5 count", "g": 0}]}, {"id": "energized-focused", "label": "Energized/Focused", "tagline": "Elevate key moments with products designed to enhance focus and energy.", "see_all": "https://mood.com/shop/benefits?filter=get-energized-and-focused", "products": [{"name": "Mind Magic THC Gummies", "url": "https://mood.com/product/mind-magic-thc-gummies", "potency": "High potency", "rating": "4.32", "reviews": "878", "from_price": "$35", "desc": "Enhanced concentration, an elevated mood, and a strong psychoactive boost with a gentle, stimulating buzz to energize body and mind.", "chips": ["15mg Delta-9 THC + 5mg THCv", "9 brain-boosting herbs", "5–15 min onset"], "count": "10 count", "g": 5}, {"name": "Morning Delta 9 THC Gummies", "url": "https://mood.com/product/morning-delta-9-thc-gummies", "potency": "Mild potency", "rating": "4.18", "reviews": "4.8k", "from_price": "$29", "desc": "A bright, clear-headed energy that enhances your mood and motivation without jitters or crashes.", "chips": ["5mg Delta-9 THC + 2mg THCv", "5–15 min onset"], "count": "10 count", "g": 1}, {"name": "Delta-9 THC Sour Rainbow Belts", "url": "https://mood.com/product/delta-9-thc-sour-rainbow-belts", "potency": "High potency", "rating": "4.24", "reviews": "569", "from_price": "$35", "desc": "A mouth-puckering sour kick followed by bright, giggly waves of euphoria. Happiness really is at the end of this rainbow.", "chips": ["9mg Delta-9 + 14mg Delta-8 THC", "1mg THC-P", "Playful"], "count": "10 count", "g": 2}]}, {"id": "feel-happy", "label": "Happy/Social", "tagline": "Raise your spirits with hemp THC that brings a smile to your face.", "see_all": "https://mood.com/shop/benefits?filter=feel-happy", "products": [{"name": "Epic Euphoria THC Gummies", "url": "https://mood.com/product/epic-euphoria-thc-gummies", "potency": "High potency", "rating": "4.31", "reviews": "1.7k", "from_price": "$35", "desc": "A direct path to waves of happiness, an elevated mindset and pure joy – hits in as little as 15 minutes.", "chips": ["Up to 13.5mg fast-acting Delta-9 THC", "5 functional mushrooms", "5–15 min onset"], "count": "10 count", "g": 3}, {"name": "Rapid Onset Delta 9 THC Gummies", "url": "https://mood.com/product/rapid-onset-delta-9-thc-gummies", "potency": "Medium potency", "rating": "4.31", "reviews": "4.5k", "from_price": "$29", "desc": "A fast-acting, full-spectrum experience relaxes your body and brightens your mood without overwhelming intensity.", "chips": ["7.5mg Delta-9 THC", "5–15 min onset"], "count": "10 count", "g": 4}, {"name": "Andy’s THC Fruity Crisp", "url": "https://mood.com/product/andys-thc-fruity-crisp", "potency": "Medium potency", "rating": "4.42", "reviews": "753", "from_price": "$6", "desc": "Experience playful nostalgia as these colorful, crispy treats bring waves of euphoria alongside sweet, fruity delight.", "chips": ["10mg Delta-9 THC + 10mg CBD", "45–120 min onset"], "count": "1 treat", "g": 6}]}, {"id": "relief", "label": "Soothed & Comfortable", "tagline": "Ease tension and soothe the body.", "see_all": "https://mood.com/shop/benefits?filter=relief-from-aches", "products": [{"name": "Pure Relief CBD Gummies", "url": "https://mood.com/product/pure-relief-cbd-gummies/dose-1000mg", "potency": "High potency", "rating": 3.99, "reviews": "870", "from_price": "$39", "desc": "A gentle wave of CBD-powered calm that settles your body and quiets the noise so you can stay present and at ease without psychoactive effects.", "chips": ["1000mg CBD", "Non-psychoactive", "30–120 min onset"], "count": null, "g": 1}, {"name": "Dual Wave Relief THC Gummies", "url": "https://mood.com/product/dual-wave-relief-thc-gummies", "potency": "Medium potency", "rating": 4.58, "reviews": "184", "from_price": "$35", "desc": "A chill buzz in the first wave melts tension quickly, then a second, longer wave carries you through the rest of your day or night in total comfort.", "chips": ["7.5mg Fast-Acting + 5mg Delta-9 THC", "50mg CBD", "5–15 min onset"], "count": "10 count", "g": 3}, {"name": "Hero Dose Rapid Onset Gummies", "url": "https://mood.com/product/hero-dose-rapid-onset-thc-gummies", "potency": "High potency", "rating": "4.49", "reviews": "7.6k", "from_price": "$39", "desc": "A strong, full-body buzz that hits in as little as 15 minutes to lift your mood, and take your buzz to the next level. Made for experienced users.", "chips": ["15mg Delta-9 + 15mg Delta-8 THC", "5–15 min onset"], "count": "10 count", "g": 7}]}, {"id": "better-sex", "label": "Connected", "tagline": "Discover increased arousal and pleasure.", "see_all": "https://mood.com/shop/benefits?filter=better-sex", "products": [{"name": "Sexual Euphoria THC Gummies", "url": "https://mood.com/product/sexual-euphoria-thcpfree-thc-gummies", "potency": "High potency", "rating": "4.02", "reviews": "818", "from_price": "$35", "desc": "Your skin becomes an erogenous playground as a warm euphoria ignites desire, amplifying arousal and deepening connections.", "chips": ["15mg Delta-9 THC + 5mg THCv", "9 botanical aphrodisiacs", "5–15 min onset"], "count": "10 count", "g": 7}, {"name": "Sexual Euphoria – Hers", "url": "https://mood.com/product/sexual-euphoria-hers", "potency": "High potency", "rating": "3.78", "reviews": "32", "from_price": "$39", "desc": "Formulated just for her, this passionfruit-flavored, fast-acting gummy combines mood-elevating botanicals to heighten sensory pleasure and spark euphoric arousal fast.", "chips": ["15mg fast-acting Delta-9 THC + 1mg THCv", "6 aphrodisiacs", "5–15 min onset"], "count": "10 count", "g": 6}, {"name": "Sexual Euphoria – His", "url": "https://mood.com/product/sexual-euphoria-his", "potency": "High potency", "rating": "4.52", "reviews": "27", "from_price": "$39", "desc": "Formulated just for him, this cherry-flavored, fast-acting gummy combines high-potency botanicals to help enhance libido, boost energy, and heighten physical sensation fast.", "chips": ["15mg fast-acting Delta-9 THC + 1mg THCv", "6 aphrodisiacs", "5–15 min onset"], "count": "10 count", "g": 4}]}];
+const cardsBox=document.getElementById('cards'),line=document.getElementById('feelLine'),esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function cardHTML(p,i){
+  return `<article class="pcard${i===1&&FINE?' def':''}">
+  <a class="ph" href="${p.url}" tabindex="-1" aria-hidden="true"><img class="lone" src="${G[p.g]}" alt="" width="200" height="200" decoding="async"></a>
+  <div class="meta"><span class="chip chip-dark">${esc(p.potency)}</span><span class="rating" aria-label="Rated ${esc(p.rating)} out of 5 from ${esc(p.reviews)} reviews"><i aria-hidden="true">★</i><span aria-hidden="true">${esc(p.rating)} (${esc(p.reviews)})</span></span></div>
+  <h3>${esc(p.name)}</h3>
+  <p>${esc(p.desc)}</p>
+  <div class="chips">${(p.chips||[]).map(c=>`<span class="chip">${esc(c)}</span>`).join('')}</div>
+  <div class="price"><span class="q">${p.count?esc(p.count):''}</span><b>From ${esc(p.from_price)}</b></div>
+  <a class="btn btn-o" href="${p.url}">Shop now<svg class="arr" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</article>`}
+
+function render(id,animate){
+  const m=MOODS.find(x=>x.id===id)||MOODS[0];
+  const draw=()=>{
+    line.innerHTML=`<b>${esc(m.label)}:</b> ${esc(m.tagline)} <a href="${m.see_all}">See all →</a>`;
+    cardsBox.innerHTML=m.products.map(cardHTML).join('');forward(cardsBox);forward(line);
+    requestAnimationFrame(()=>cardsBox.classList.remove('swap'));
+  };
+  if(animate&&!RM){cardsBox.classList.add('swap');line.classList.add('swap');setTimeout(()=>{draw();line.classList.remove('swap')},220)}else draw();
+}
+render(MOODS[0].id,false);
+document.getElementById('feel').addEventListener('click',e=>{const b=e.target.closest('button');if(!b||b.getAttribute('aria-pressed')==='true')return;
+  document.querySelectorAll('#feel button').forEach(x=>x.setAttribute('aria-pressed',x===b));render(b.dataset.mood,true)});
+
+/* card tilt (delegated, cards re-render per mood) */
+if(FINE&&!RM){
+  cardsBox.addEventListener('pointermove',e=>{const c=e.target.closest('.pcard');if(!c)return;const r=c.getBoundingClientRect(),nx=(e.clientX-r.left)/r.width-.5,ny=(e.clientY-r.top)/r.height-.5;
+    cardsBox.querySelectorAll('.pcard.tilt').forEach(x=>{if(x!==c){x.classList.remove('tilt');x.style.transform=''}});
+    c.classList.add('tilt');c.style.transform=`rotateX(${(-ny*7).toFixed(2)}deg) rotateY(${(nx*8).toFixed(2)}deg) translateY(-4px)`});
+  cardsBox.addEventListener('pointerleave',()=>cardsBox.querySelectorAll('.pcard').forEach(c=>{c.classList.remove('tilt');c.style.transform=''}));
+}
+
+/* faq */
+document.getElementById('faq').addEventListener('click',e=>{const q=e.target.closest('.fq');if(!q)return;const it=q.parentElement,open=!it.classList.contains('open');
+  it.classList.toggle('open',open);q.setAttribute('aria-expanded',open)});
+
+/* sticky cta (mobile) */
+const sticky=document.getElementById('sticky'),seen=new Map();
+const so=new IntersectionObserver(es=>{es.forEach(e=>seen.set(e.target.id,e.isIntersecting));sticky.classList.toggle('show',seen.get('heroCta')===false&&!seen.get('finalCta'))});
+so.observe(document.getElementById('heroCta'));so.observe(document.getElementById('finalCta'));
+
+/* age gate */
+const gate=document.getElementById('gate');
+const ageOk=new Promise(res=>{
+  if(doc.classList.contains('age-ok')){res();return}
+  const bg=[...document.querySelectorAll('body > :not(#gate)')];bg.forEach(el=>el.inert=true);
+  const yes=document.getElementById('ageYes'),no=document.getElementById('ageNo');
+  setTimeout(()=>yes.focus(),60);
+  gate.addEventListener('keydown',e=>{if(e.key!=='Tab')return;const f=[...gate.querySelectorAll('button,a')].filter(x=>x.offsetParent);const i=f.indexOf(document.activeElement);
+    if(e.shiftKey&&i<=0){e.preventDefault();f[f.length-1].focus()}else if(!e.shiftKey&&i===f.length-1){e.preventDefault();f[0].focus()}});
+  yes.addEventListener('click',()=>{try{localStorage.setItem('mood_age_ok','1')}catch(e){}
+    bg.forEach(el=>el.inert=false);gate.classList.add('out');setTimeout(()=>{doc.classList.add('age-ok')},460);res()});
+  no.addEventListener('click',()=>{gate.classList.add('denied');gate.querySelector('.gdenied h2').setAttribute('tabindex','-1');gate.querySelector('.gdenied h2').focus()});
+});
+
+/* start */
+function relayout(){VH=innerHeight;VW=innerWidth;layoutRail();layoutTracks();heroField.layout();if(finalField.dropped)finalField.layout();if(RM){heroField.place();if(finalField.dropped)finalField.place()}}
+let rz;addEventListener('resize',()=>{clearTimeout(rz);rz=setTimeout(relayout,180)});
+function start(){
+  if(started)return;started=true;
+  layoutRail();layoutTracks();heroField.layout();
+  document.getElementById('h1').parentElement.classList.add('ready');
+  if(RM){heroField.place();stepEls.forEach(s=>s.classList.add('act'));return}
+  heroField.drop();requestAnimationFrame(t=>{last=t;frame(t)});
+}
+Promise.all([ageOk,(document.fonts&&document.fonts.ready?Promise.race([document.fonts.ready,new Promise(r=>setTimeout(r,900))]):Promise.resolve())]).then(()=>requestAnimationFrame(start));
+})();
+</script>
+</body>
+</html>
